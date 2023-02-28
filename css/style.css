@@ -42,90 +42,108 @@ header,
 .white-coffee,
 .voucher,
 .customer-reviews,
-.branches-section{
+.branches-section {
     background-color: #212731;
 }
 
 .black-coffes,
-.open, footer {
+.open,
+footer {
     background-color: #29a19c;
 }
 
-h1, h2 {
+h1,
+h2 {
     margin: 0;
     padding: 0;
     font-family: 'Grand Hotel', cursive;
 }
-p{
+
+p {
     margin: 0;
     padding: 0;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header{
+header {
     height: 850px;
     background-image: url(../img/bpage1.png), url(../img/coffee1.png);
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, bottom right;
-    background-size: 100%, 870px;
+    background-size: 1440px, 870px;
 }
-button{
+
+button {
     margin: 0;
     padding: 0;
 }
 
-.nav-list{
+.logo-link {
     display: flex;
-    font-size: 25px;
-    line-height: 61px;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    font-size: 33px;
     font-weight: 700;
 }
-.nav-header{
+
+.nav-list {
+    display: flex;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.home{
+    border-bottom: 5px solid #29a19c;
+}
+
+.nav-header {
     padding: 50px;
 }
-.nav{
+
+.nav {
     margin-right: 50px;
 }
-.logo-link{
-    background-image: url(../img/icon/logo.png);
-    background-repeat: no-repeat;
-    width: 218px;
-    height: 51px;
-}
-.content{
+
+.content {
 
     padding-left: 50px;
-        position: relative;
-            z-index: 1;
+    position: relative;
+    z-index: 1;
 }
-.content-right{
-    
-}
-.title-main{
+
+.content-right {}
+
+.title-main {
     font-size: 153px;
     font-weight: 400;
     margin-bottom: 20px;
 }
-.headline{
+
+.headline {
     font-size: 33px;
     font-weight: 700;
     margin-bottom: 20px;
 }
-.text-header{
+
+.text-header {
     width: 460px;
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
 }
-.button-light{
+
+.button-light {
     font-size: 33px;
     font-weight: 700;
     padding: 10px 20px;
     border-radius: 10px;
     background-color: #29a19c;
+    border: none;
 }
