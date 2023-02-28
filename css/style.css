@@ -1,2 +1,131 @@
 /* font-family: 'Grand Hotel', cursive;
 font-family: 'Montserrat', sans-serif; */
+body {
+    width: 1440px;
+    margin: auto;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Grand Hotel', cursive;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: inline-block;
+}
+
+header,
+.hot-coffee,
+.white-coffee,
+.voucher,
+.customer-reviews,
+.branches-section{
+    background-color: #212731;
+}
+
+.black-coffes,
+.open, footer {
+    background-color: #29a19c;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Grand Hotel', cursive;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    height: 850px;
+    background-image: url(../img/bpage1.png), url(../img/coffee1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, bottom right;
+    background-size: 100%, 870px;
+}
+button{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list{
+    display: flex;
+    font-size: 25px;
+    line-height: 61px;
+    font-weight: 700;
+}
+.nav-header{
+    padding: 50px;
+}
+.nav{
+    margin-right: 50px;
+}
+.logo-link{
+    background-image: url(../img/icon/logo.png);
+    background-repeat: no-repeat;
+    width: 218px;
+    height: 51px;
+}
+.content{
+
+    padding-left: 50px;
+        position: relative;
+            z-index: 1;
+}
+.content-right{
+    
+}
+.title-main{
+    font-size: 153px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.headline{
+    font-size: 33px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.text-header{
+    width: 460px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;    
+}
+.button-light{
+    font-size: 33px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #29a19c;
+}
