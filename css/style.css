@@ -58,9 +58,7 @@ figcaption,figure{
     margin: 0;
 }
 
-.figure-black-coffee{
-    width: 537px;
-}
+/* -------- Styles Sections -------- */
 
 .black-coffes,
 .hot-coffee,
@@ -69,8 +67,8 @@ figcaption,figure{
 .customer-reviews,
 .open {
     box-sizing: border-box;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 160px;
+    padding-right: 160px;
 }
 
 header,
@@ -80,9 +78,20 @@ footer,
     padding-right: 50px;
 }
 
-.black-coffes, .hot-coffee, .white-coffee{
+.black-coffes, .hot-coffee, .white-coffee, .customer-reviews-block{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.figure-black-coffee {
+    padding-top: 20px;
+    width: 537px;
+}
+
+.figure-hot-coffee,
+.figure-white-coffee {
+    width: 505px;
 }
 
 .img-section{
@@ -97,13 +106,11 @@ header,
 .voucher,
 .customer-reviews,
 .branches-section {
-    /* height: 840px; */
     background-color: #212731;
 }
 
 .black-coffes,
 .open {
-    /* height: 840px; */
     background-color: #29a19c;
 }
 footer {
@@ -113,13 +120,21 @@ footer {
 /* -------- Images -------- */
 
 header {
-    height: 850px;
+    height: 820px;
     background-image: url(../img/bpage1.png), url(../img/coffee1.png);
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, bottom right;
-    background-size: 1440px, 870px;
+    background-size: 1900px, 820px;
+}
+.hot-coffee {
+    background-image: url(../img/bpage2.png);
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
+.img-voucher{
+    width: 900px;
+}
 /* -------- Button -------- */
 
 .button-light {
@@ -164,7 +179,7 @@ header {
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .headline {
@@ -176,7 +191,7 @@ header {
 .title-main {
     font-size: 153px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .nav-list {
@@ -189,7 +204,14 @@ header {
     width: 300px;
     font-size: 125px;
     font-weight: 400;
-    margin-bottom: 63px;
+    margin-bottom: 90px;
+    line-height: 120px;
+}
+.title-voucher{
+    font-size: 125px;
+    font-weight: 400;
+    line-height: 120px;
+    margin-bottom: 20px;
 }
 .title-small {
     font-size: 88px;
@@ -245,8 +267,8 @@ nav {
 }
 
 .nav-header {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .nav {
@@ -254,22 +276,44 @@ nav {
 }
 
 .content {
+    padding-top: 50px;
+    padding-bottom: 50px;
     position: relative;
     z-index: 1;
 }
 
-
 /* -------- Black Coffes -------- */
+
+.black-coffes{
+ padding-top: 50px;
+ padding-bottom: 50px;
+}
 
 /* -------- Hot Coffee -------- */
 
+.hot-coffee{
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+
+.hot-block-right{
+    text-align: right;
+}
 /* -------- White Coffee -------- */
 
 /* -------- Voucher -------- */
 
+.voucher{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 /* -------- Customer Reviews -------- */
 
+.customer-reviews{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 /* -------- Team -------- */
 
