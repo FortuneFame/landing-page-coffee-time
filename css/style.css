@@ -1,5 +1,4 @@
-/* font-family: 'Grand Hotel', cursive;
-font-family: 'Montserrat', sans-serif; */
+/* -------- Global -------- */
 body {
     width: 1440px;
     margin: auto;
@@ -37,19 +36,9 @@ img {
     display: inline-block;
 }
 
-header,
-.hot-coffee,
-.white-coffee,
-.voucher,
-.customer-reviews,
-.branches-section {
-    background-color: #212731;
-}
-
-.black-coffes,
-.open,
-footer {
-    background-color: #29a19c;
+button {
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -64,11 +53,47 @@ p {
     padding: 0;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.black-coffes,
+.hot-coffee,
+.white-coffee,
+.voucher,
+.customer-reviews,
+.open {
+    box-sizing: border-box;
+    padding-left: 130px;
+    padding-right: 130px;
 }
+
+header,
+footer,
+.branches-section {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/* -------- Background -------- */
+
+header,
+.hot-coffee,
+.white-coffee,
+.voucher,
+.customer-reviews,
+.branches-section {
+    height: 840px;
+    background-color: #212731;
+}
+
+.black-coffes,
+.open {
+    height: 840px;
+    background-color: #29a19c;
+}
+footer {
+    height: 500px;
+    background-color: #29a19c;
+}
+/* -------- Images -------- */
 
 header {
     height: 850px;
@@ -78,9 +103,99 @@ header {
     background-size: 1440px, 870px;
 }
 
-button {
-    margin: 0;
-    padding: 0;
+/* -------- Button -------- */
+
+.button-light {
+    font-size: 33px;
+    font-weight: 700;
+    padding: 4px 20px;
+    border-radius: 20px;
+    background-color: #29a19c;
+    border: 4px solid #29a19c;
+}
+
+.button-light:hover {
+    outline: none;
+    background: transparent;
+    border: 4px solid #29a19c;
+    cursor: pointer;
+    transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-dark {
+    font-size: 33px;
+    font-weight: 700;
+    padding: 4px 20px;
+    border-radius: 20px;
+    background-color: #212731;
+    border: 4px solid #212731;
+}
+
+.button-dark:hover {
+    outline: none;
+    background: transparent;
+    border: 4px solid #212731;
+    cursor: pointer;
+    color: #212731;
+    transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* -------- Text -------- */
+
+.text-header {
+    width: 460px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.headline {
+    font-size: 33px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.title-main {
+    font-size: 153px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.nav-list {
+    display: flex;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.title-section {
+    font-size: 125px;
+    font-weight: 400;
+}
+.text-content{
+    width: 570px;
+    font-size: 21px;
+    line-height: 39px;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* -------- Header -------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-link {
@@ -92,18 +207,13 @@ button {
     font-weight: 700;
 }
 
-.nav-list {
-    display: flex;
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.home{
+.home {
     border-bottom: 5px solid #29a19c;
 }
 
 .nav-header {
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .nav {
@@ -111,37 +221,37 @@ button {
 }
 
 .content {
-
-    padding-left: 50px;
     position: relative;
     z-index: 1;
 }
 
-.title-main {
-    font-size: 153px;
-    font-weight: 400;
-    margin-bottom: 20px;
+
+/* -------- Black Coffes -------- */
+
+.black-coffes {
+    display: flex;
 }
 
-.headline {
-    font-size: 33px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
+/* -------- Hot Coffee -------- */
 
-.text-header {
-    width: 460px;
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
 
-.button-light {
-    font-size: 33px;
-    font-weight: 700;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: #29a19c;
-    border: none;
-}
+/* -------- White Coffee -------- */
+
+
+/* -------- Voucher -------- */
+
+
+/* -------- Customer Reviews -------- */
+
+
+/* -------- Team -------- */
+
+
+/* -------- Branches -------- */
+
+
+/* -------- Footer ------ */
+
+/* --------  -------- */
+/* --------  -------- */
+/* --------  -------- */
