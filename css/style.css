@@ -53,6 +53,15 @@ p {
     padding: 0;
 }
 
+figcaption,figure{
+    padding: 0;
+    margin: 0;
+}
+
+.figure-black-coffee{
+    width: 537px;
+}
+
 .black-coffes,
 .hot-coffee,
 .white-coffee,
@@ -71,6 +80,14 @@ footer,
     padding-right: 50px;
 }
 
+.black-coffes, .hot-coffee, .white-coffee{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-section{
+    margin-bottom: 20px;
+}
 
 /* -------- Background -------- */
 
@@ -80,13 +97,13 @@ header,
 .voucher,
 .customer-reviews,
 .branches-section {
-    height: 840px;
+    /* height: 840px; */
     background-color: #212731;
 }
 
 .black-coffes,
 .open {
-    height: 840px;
+    /* height: 840px; */
     background-color: #29a19c;
 }
 footer {
@@ -169,11 +186,27 @@ header {
 }
 
 .title-section {
+    width: 300px;
     font-size: 125px;
     font-weight: 400;
+    margin-bottom: 63px;
 }
+.title-small {
+    font-size: 88px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.title-open {
+    font-size: 98px;
+    letter-spacing: 4px;
+    line-height: 31px;
+    font-weight: 400;
+    text-align: center;
+}
+
 .text-content{
-    width: 570px;
     font-size: 21px;
     line-height: 39px;
 }
@@ -228,15 +261,9 @@ nav {
 
 /* -------- Black Coffes -------- */
 
-.black-coffes {
-    display: flex;
-}
-
 /* -------- Hot Coffee -------- */
 
-
 /* -------- White Coffee -------- */
-
 
 /* -------- Voucher -------- */
 
