@@ -161,9 +161,7 @@ transform: rotate(0.92turn);
     width: 900px;
     padding-right: 25px;
 }
-.team-img{
-    padding: 20px;
-}
+
 
 /* -------- Button -------- */
 
@@ -292,6 +290,20 @@ transform: rotate(0.92turn);
     line-height: 28px;
 }
 
+.info, .contact{
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.info-nav, .supp-link, .address-link{
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
 .text-content {
     font-size: 21px;
     line-height: 39px;
@@ -321,13 +333,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
-    font-size: 33px;
+    width: 255px;
+    font-size: 35px;
     letter-spacing: -2px;
     font-weight: 700;
 }
 
-.nav-header {
+.nav-header, .nav-footer {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -336,7 +348,7 @@ nav {
     position: relative;
 }
 
-.home::before {
+.active::before {
     position: absolute;
     content: "";
     height: 3px;
@@ -390,6 +402,9 @@ nav {
     /* padding-top: 50px; */
     /* padding-bottom: 50px; */
 }
+.team-img {
+    padding: 20px;
+}
 
 /* -------- Team -------- */
 
@@ -435,6 +450,7 @@ nav {
     letter-spacing: 2px;
     line-height: 28px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .comment{
@@ -465,6 +481,22 @@ nav {
 }
 /* -------- Footer ------ */
 
+.info-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.info-block-right{
+    display: flex;
+}
+
+.section-info{
+    margin-right: 120px;
+}
+
 .footer{
     border-bottom: 10px solid #212731;
 }
@@ -476,17 +508,38 @@ nav {
 }
 
 .soc{
-    padding: 0;
-    margin: 0;
-}
-
-.soc-footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
+    padding: 0;
+    margin: 0;
+    fill: #ffffff;
 }
+
+.soc:hover{
+    background-color: #212731;
+}
+
+.soc-footer:not(:last-child){
+margin-right: 10px;
+}
+
+.active-footer::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 72px;
+    bottom: 0;
+    left: 3px;
+    background-color: #fff;
+}
+
+/* .nav-footer{
+    padding-bottom: 30px;
+} */
 
 /* --------  -------- */
 /* --------  -------- */
