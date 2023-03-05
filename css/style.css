@@ -42,7 +42,8 @@ button {
 }
 
 h1,
-h2 {
+h2,
+.team-name {
     margin: 0;
     padding: 0;
     font-family: 'Grand Hotel', cursive;
@@ -53,7 +54,8 @@ p {
     padding: 0;
 }
 
-figcaption,figure{
+figcaption,
+figure {
     padding: 0;
     margin: 0;
 }
@@ -78,7 +80,10 @@ footer,
     padding-right: 50px;
 }
 
-.black-coffes, .hot-coffee, .white-coffee, .customer-reviews-block{
+.black-coffes,
+.hot-coffee,
+.white-coffee,
+.customer-reviews-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,7 +99,7 @@ footer,
     width: 505px;
 }
 
-.img-section{
+.img-section {
     margin-bottom: 20px;
 }
 
@@ -113,10 +118,11 @@ header,
 .open {
     background-color: #29a19c;
 }
+
 footer {
-    height: 500px;
     background-color: #29a19c;
 }
+
 /* -------- Images -------- */
 
 header {
@@ -126,15 +132,39 @@ header {
     background-position: bottom, bottom right;
     background-size: 1900px, 820px;
 }
+
+.logo-img{
+transform: rotate(0.92turn);
+}
+
 .hot-coffee {
     background-image: url(../img/bpage2.png);
     background-repeat: no-repeat;
     background-position: top;
 }
 
-.img-voucher{
-    width: 900px;
+.customer-reviews {
+    background-image: url(../img/bpage3.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 100px;
+    padding-bottom: 230px;
 }
+
+.branches-section{
+    background-image: url(../img/bpage2.png), url(../img/bpage4.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+}
+
+.img-voucher {
+    width: 900px;
+    padding-right: 25px;
+}
+.team-img{
+    padding: 20px;
+}
+
 /* -------- Button -------- */
 
 .button-light {
@@ -207,41 +237,75 @@ header {
     margin-bottom: 90px;
     line-height: 120px;
 }
-.title-voucher{
+
+.title-voucher {
     font-size: 125px;
     font-weight: 400;
     line-height: 120px;
     margin-bottom: 20px;
 }
+
 .title-small {
     font-size: 88px;
-    line-height: 28px;
+    line-height: 40px;
     font-weight: 400;
-    text-align: center;
+    margin-bottom: 100px;
+}
+
+.team-name {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.text-team {
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 28px;
 }
 
 .title-open {
     font-size: 98px;
-    letter-spacing: 4px;
-    line-height: 31px;
+    line-height: 90px;
     font-weight: 400;
-    text-align: center;
+    margin-bottom: 100px;
 }
 
-.text-content{
+.week{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.time{
+    font-size: 38px;
+}
+
+.title-branches{
+    font-size: 88px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.text-branches{
+    width: 350px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.text-content {
     font-size: 21px;
     line-height: 39px;
 }
 
-.text-right{
+.text-right {
     text-align: right;
 }
 
-.text-left{
+.text-left {
     text-align: left;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
@@ -271,7 +335,7 @@ nav {
     padding-bottom: 30px;
 }
 
-.nav {
+.nav:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -284,45 +348,112 @@ nav {
 
 /* -------- Black Coffes -------- */
 
-.black-coffes{
- padding-top: 50px;
- padding-bottom: 50px;
+.black-coffes {
+    padding-top: 50px;
 }
 
 /* -------- Hot Coffee -------- */
 
-.hot-coffee{
+.hot-coffee {
     padding-top: 130px;
     padding-bottom: 50px;
 }
 
-.hot-block-right{
+.hot-block-right {
     text-align: right;
 }
+
 /* -------- White Coffee -------- */
 
 /* -------- Voucher -------- */
 
-.voucher{
+.voucher {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 /* -------- Customer Reviews -------- */
 
-.customer-reviews{
-    padding-top: 50px;
-    padding-bottom: 50px;
+.customer-reviews {
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
 }
 
 /* -------- Team -------- */
 
+.team {
+    width: 485px;
+    text-align: center;
+}
 
+.team-img, 
+.team-name
+{
+    margin-bottom: 20px;
+}
+
+/* -------- Open -------- */
+
+.schedule{
+    margin-bottom: 100px;
+}
+.schedule:last-child{
+    margin-bottom: 0;
+}
+
+.open{
+    padding-bottom: 50px;
+}
 /* -------- Branches -------- */
 
+.branches-section{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
 
+.branches-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment {
+    font-size: 33px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.comment{
+    position: relative;
+    background-color: #29a19c;
+    border: 4px solid #29a19c;
+    margin-left: 55px;
+    margin-right: 55px; 
+    margin-bottom: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+
+.comment:after{
+    top: 39px;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    border-top-color: #29a19c;
+    border-width: 30px 15px;
+    left: 0;
+}
+
+.img-branches{
+    margin-bottom: 35px;
+    cursor: pointer;
+}
 /* -------- Footer ------ */
 
-/* --------  -------- */
+.footer{
+    border-bottom: 10px solid #212731;
+}
+
 /* --------  -------- */
 /* --------  -------- */
