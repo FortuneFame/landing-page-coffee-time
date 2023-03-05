@@ -173,7 +173,6 @@ header {
     padding-right: 25px;
 }
 
-
 /* -------- Button -------- */
 
 .button-light {
@@ -288,10 +287,6 @@ nav {
 
 /* -------- Customer Reviews -------- */
 
-.customer-reviews {
-    /* padding-top: 50px; */
-    /* padding-bottom: 50px; */
-}
 .team-img {
     padding: 20px;
 }
@@ -389,6 +384,7 @@ nav {
 
 .footer{
     border-bottom: 10px solid #212731;
+    margin-top: 1px;
 }
 
 .soc-footer-list{
