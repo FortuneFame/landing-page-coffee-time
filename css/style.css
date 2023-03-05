@@ -321,18 +321,30 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 260px;
+    width: 240px;
     font-size: 33px;
+    letter-spacing: -2px;
     font-weight: 700;
-}
-
-.home {
-    border-bottom: 5px solid #29a19c;
 }
 
 .nav-header {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.nav-link{
+    position: relative;
+}
+
+.home::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 72px;
+    bottom: 0;
+    left: 3px;
+    background-color: #29a19c;
+
 }
 
 .nav:not(:last-child) {
@@ -403,6 +415,8 @@ nav {
 
 .open{
     padding-bottom: 50px;
+    margin-top: -2px;
+    
 }
 /* -------- Branches -------- */
 
@@ -453,6 +467,25 @@ nav {
 
 .footer{
     border-bottom: 10px solid #212731;
+}
+
+.soc-footer-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.soc{
+    padding: 0;
+    margin: 0;
+}
+
+.soc-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
 }
 
 /* --------  -------- */
