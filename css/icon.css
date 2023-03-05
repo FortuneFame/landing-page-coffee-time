@@ -1,0 +1,171 @@
+.coffee-header-bottom {
+    top: 740px;
+    left: 216px;
+    transform: rotate(0.8turn);
+}
+
+
+.kettle-header {
+    top: 537px;
+    left: 409px;
+}
+
+.cup-header {
+    top: 157px;
+    left: 827px;
+}
+
+.coffee-header {
+    top: 381px;
+    left: 651px;
+}
+
+.coffee-black-top {
+    left: 589px;
+    top: 100px;
+}
+
+.coffee-black-left {
+    left: 194px;
+    top: 700px;
+    transform: rotate(0.8turn);
+}
+
+.coffee-black-right {
+    left: 1287px;
+    top: 500px;
+}
+
+.kettle-black {
+    left: 541px;
+}
+
+.cup-black {
+    left: 1276px;
+    top: 10px;
+}
+
+.coffee-hot-top {
+    left: 803px;
+    top: 210px;
+}
+
+.cup-hot {
+    left: 50px;
+    top: 200px;
+    transform: rotate(0.9turn);
+}
+
+.kettle-hot {
+    left: 900px;
+    top: 680px;
+    transform: rotate(1.15turn)
+}
+
+.coffee-hot-right {
+    left: 1360px;
+    top: 470px;
+}
+
+.coffee-white-top {
+    top: 10px;
+    left: 300px;
+    transform: rotate(0.85turn);
+}
+
+.coffee-white {
+    left: 605px;
+    transform: rotate(0.8turn);
+}
+
+.cup-white {
+    left: 1340px;
+    top: 110px;
+    transform: rotate(1.1turn) scaleX(-1);
+}
+
+.kettle-white {
+    bottom: 0;
+    left: 270px;
+    transform: rotate(0.85turn) scaleX(-1);
+}
+
+.cup-voucher {
+    top: 400px;
+    left: 110px;
+    transform: rotate(0.92turn);
+}
+
+.kettle-voucher {
+    left: 1200px;
+    top: 500px;
+    transform: rotate(1.15turn);
+}
+
+.coffee-voucher {
+    top: 50px;
+    left: 1250px;
+    transform: rotate(0.85turn);
+}
+
+.coffee-team {
+    left: 690px;
+    top: 290px;
+}
+
+.kettle-team {
+    top: 580px;
+    left: 60px;
+    transform: scaleX(-1) rotate(1.15turn);
+}
+
+.cup-team {
+    top: 580px;
+    left: 1250px;
+}
+
+.coffee-open-left {
+    top: 0;
+    left: 100px;
+    transform: rotate(0.85turn);
+}
+
+.coffee-open {
+    top: 380px;
+    left: 1150px;
+}
+
+.kettle-open {
+    top: 0;
+    left: 1200px;
+    transform: rotate(1.15turn);
+}
+
+.cup-open {
+    top: 250px;
+    left: 200px;
+    transform: rotate(0.92turn);
+}
+
+.coffee-branches-left {
+    top: 150px;
+    left: 290px;
+}
+
+.coffee-branches-right {
+    top: 200px;
+    left: 1320px;
+    transform: rotate(0.85turn);
+}
+
+.kettle-branches {
+    left: 430px;
+    top: 770px;
+    transform: rotate(1.15turn);
+}
+
+.cup-branches {
+    left: 930px;
+    top: 800px;
+    transform: rotate(0.92turn);
+}

@@ -1,0 +1,121 @@
+.text-header {
+    width: 460px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.headline {
+    font-size: 33px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.title-main {
+    font-size: 153px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.nav-list {
+    display: flex;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.title-section {
+    width: 300px;
+    font-size: 125px;
+    font-weight: 400;
+    margin-bottom: 90px;
+    line-height: 120px;
+}
+
+.title-voucher {
+    font-size: 125px;
+    font-weight: 400;
+    line-height: 120px;
+    margin-bottom: 20px;
+}
+
+.title-small {
+    font-size: 88px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.team-name {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.text-team {
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.title-open {
+    font-size: 98px;
+    line-height: 90px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.week {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.time {
+    font-size: 38px;
+}
+
+.title-branches {
+    font-size: 88px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.text-branches {
+    width: 350px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.info,
+.contact {
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.info-nav,
+.supp-link,
+.address-link {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+.text-content {
+    font-size: 21px;
+    line-height: 39px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
