@@ -36,7 +36,7 @@ img {
     display: inline-block;
 }
 
-button {
+button, svg {
     margin: 0;
     padding: 0;
 }
@@ -122,6 +122,17 @@ header,
 footer {
     background-color: #29a19c;
 }
+header, section{
+    position: relative;
+    z-index: 100;
+}
+
+.svg{
+    position: absolute;
+    content: " ";
+    fill: #51565e;
+    left: 0;
+}
 
 /* -------- Images -------- */
 
@@ -134,7 +145,8 @@ header {
 }
 
 .logo-img{
-transform: rotate(0.92turn);
+    fill: #fff;
+    transform: rotate(0.92turn);
 }
 
 .hot-coffee {
@@ -366,8 +378,6 @@ nav {
 .content {
     padding-top: 50px;
     padding-bottom: 50px;
-    position: relative;
-    z-index: 1;
 }
 
 /* -------- Black Coffes -------- */
@@ -536,10 +546,6 @@ margin-right: 10px;
     left: 3px;
     background-color: #fff;
 }
-
-/* .nav-footer{
-    padding-bottom: 30px;
-} */
 
 /* --------  -------- */
 /* --------  -------- */
