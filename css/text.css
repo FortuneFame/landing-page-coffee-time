@@ -119,3 +119,84 @@
 .text-center {
     text-align: center;
 }
+
+.comment {
+    font-size: 33px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+@media (min-width:768px) and (max-width:1440px) {
+    .nav-list{
+        font-size: 18px;
+    }
+    .logo-link{
+        font-size: 18px;
+    }
+    .title-main{
+        font-size: 100px;
+        margin-bottom: 15px;
+    }
+    .headline{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .text-header{
+        font-size: 12px;
+        width: 38%;
+    }
+    .text-header{
+        margin-bottom: 15px;
+    }
+    .title-section{
+        font-size: 90px;
+        line-height: 90px;
+        margin-bottom: 55px;
+    }
+    .text-content{
+        font-size: 15px;
+        width: 100%;
+        line-height: 30px;
+    }
+    .title-voucher{
+        font-size: 85px;
+        line-height: 80px;
+        margin-bottom: 15px;
+    }
+    .title-small{
+        font-size: 70px;
+        margin-bottom: 50px;
+    }
+    .title-open {
+        font-size: 75px;
+        line-height: 80px;
+        margin-bottom: 50px;
+    }
+    .week, .time{
+        font-size: 30px;
+    }
+    .text-team{
+        font-size: 17px;
+    }
+    .text-branches{
+        width: 100%;
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+    .comment{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .title-branches{
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+    .contact, .info{
+        font-size: 18px;
+    }
+    .link-info, .supp-link, .address-link{
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
