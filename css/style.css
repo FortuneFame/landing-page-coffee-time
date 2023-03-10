@@ -59,6 +59,10 @@ figure {
     margin: 0;
 }
 
+.svg{
+    display: none;
+}
+
 /* -------- Styles Sections -------- */
 
 .black-coffes,
@@ -126,6 +130,19 @@ figure {
     }
 }
 
+@media (max-width:767px) {
+
+    .black-coffes,
+    .hot-coffee,
+    .white-coffee,
+    .voucher,
+    .customer-reviews,
+    .open {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 @media (min-width:768px) and (max-width:1440px) {
     .black-coffes,
     .hot-coffee,
@@ -137,6 +154,9 @@ figure {
         padding-right: 80px;
     }
 }
+
+
+
 
 /* -------- Background -------- */
 
@@ -175,7 +195,7 @@ header {
     background-image: url(../img/bpage1.png), url(../img/coffee1.png);
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, bottom right;
-    background-size: 130%, 820px;
+    background-size: 13%, 820px;
 }
 
 .logo-img{
@@ -224,6 +244,35 @@ header {
     margin-bottom: 20px;
 }
 
+@media (max-width:767px) {
+    .img-section {
+        width: 250px;
+    }
+
+    .img-voucher {
+        width: 400px;
+       padding-right: 0;
+       }
+
+    .team-img {
+        width: 350px;
+    }
+
+    .img-branches {
+        margin-bottom: 10px;
+    }
+
+    .team-img {
+        padding: 0;
+    }
+
+    .team-img,
+    .team-name {
+        margin: bottom 0;
+        ;
+    }
+}
+
 @media (min-width:768px) and (max-width:1440px){
     .img-section{
         width: 300px;
@@ -245,7 +294,8 @@ header {
     .team-name {
         margin: bottom 0;;
     }
-    }
+}
+
 
 
 /* -------- Button -------- */
@@ -285,6 +335,14 @@ header {
     transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (max-width:767px) {
+    .button-light,
+    .button-dark {
+        font-size: 20px;
+        padding: 3px 12px;
+    }
+}
+
 @media (min-width:768px) and (max-width:1440px){
     .button-light, .button-dark{
         font-size: 17px;
@@ -292,14 +350,15 @@ header {
     }
 }
 
+
 /* -------- Header -------- */
 
-.burger{
+.burger {
     display: none;
     fill: #fff;
 }
 
-.nav-header{
+.nav-header {
     display: flex;
     justify-content: space-between;
 }
@@ -320,14 +379,15 @@ nav {
     font-weight: 700;
 }
 
-.nav-header, .nav-footer {
+.nav-header,
+.nav-footer {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.nav-link{
+.nav-link {
     position: relative;
 }
 
@@ -350,6 +410,52 @@ nav {
     padding: 50px;
 }
 
+@media (max-width:767px) {
+    .nav{
+        display: none;
+    }
+    .nav-header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .burger{
+        display: block;
+    }
+    header {
+        height: 470px;
+        width: 100%;
+        background-size: 130%, 300px;
+        margin: auto;
+    }
+
+    .logo-img {
+        justify-content: end;
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .nav:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .content {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+
+    .active::before {
+        width: 90%;
+    }
+}
+
+
 @media (min-width:768px) and (max-width:1440px) {
     header{
         height: auto;
@@ -370,24 +476,22 @@ nav {
         padding-left: 30px;
         padding-right: 30px;
     }
-
-    .nav:not(:last-child) {
-    margin-right: 40px;
-    }
-    .content{
-        padding-top: 0;
-        padding-bottom: 100px;
-    }
-    .active::before{
-        width: 90%;
-    }
 }
+
 
 
 /* -------- Black Coffes -------- */
 
 .black-coffes {
     padding-top: 50px;
+}
+
+@media (max-width:767px) {
+    .figure-black-coffee,
+    .figure-hot-coffee,
+    .figure-white-coffee{
+        width: auto;
+    }
 }
 
 @media (min-width:768px) and (max-width:1440px){
@@ -419,6 +523,8 @@ nav {
     }
 }
 
+@media (max-width:767px) {}
+
 /* -------- White Coffee -------- */
 .white-coffee{
     padding-bottom: 50px;
@@ -433,6 +539,8 @@ nav {
     }
 }
 
+@media (max-width:767px) {}
+
 /* -------- Voucher -------- */
 
 .voucher {
@@ -444,6 +552,8 @@ nav {
         padding-top: 50px;
     }
 }
+
+@media (max-width:767px) {}
 
 /* -------- Customer Reviews -------- */
 
@@ -464,8 +574,10 @@ nav {
     .team:last-child{
         margin-top: 50px;
     }
-
 }
+@media (max-width:767px) {}
+
+
 
 /* -------- Open -------- */
 
@@ -487,6 +599,9 @@ nav {
         margin-bottom: 50px;
     }
 }
+@media (max-width:767px) {}
+
+
 /* -------- Branches -------- */
 
 .branches-section{
@@ -544,7 +659,7 @@ nav {
         padding-bottom: 100px;
     }
 }
-
+@media (max-width:767px) {}
 
 /* -------- Footer ------ */
 
@@ -603,6 +718,12 @@ margin-right: 10px;
     background-color: #fff;
 }
 
+@media (max-width:767px) {
+    .info-block-right {
+        display: none;
+    }
+}
+
 @media (min-width:768px) and (max-width:1440px) {
     .active-footer::before{
         width: 90%;
@@ -616,3 +737,4 @@ margin-right: 10px;
         padding-bottom: 0;
     }
 }
+
