@@ -130,33 +130,6 @@ figure {
     }
 }
 
-@media (max-width:767px) {
-
-    .black-coffes,
-    .hot-coffee,
-    .white-coffee,
-    .voucher,
-    .customer-reviews,
-    .open {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-@media (min-width:768px) and (max-width:1440px) {
-    .black-coffes,
-    .hot-coffee,
-    .white-coffee,
-    .voucher,
-    .customer-reviews,
-    .open {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
-}
-
-
-
 
 /* -------- Background -------- */
 
@@ -244,60 +217,6 @@ header {
     margin-bottom: 20px;
 }
 
-@media (max-width:767px) {
-    .img-section {
-        width: 250px;
-    }
-
-    .img-voucher {
-        width: 400px;
-       padding-right: 0;
-       }
-
-    .team-img {
-        width: 350px;
-    }
-
-    .img-branches {
-        margin-bottom: 10px;
-    }
-
-    .team-img {
-        padding: 0;
-    }
-
-    .team-img,
-    .team-name {
-        margin: bottom 0;
-        ;
-    }
-}
-
-@media (min-width:768px) and (max-width:1440px){
-    .img-section{
-        width: 300px;
-    }
-    .img-voucher{
-        width: 550px;
-    }
-    .team-img {
-        width: 350px;
-    }
-    .img-branches{
-        margin-bottom: 20px;
-    }
-    .team-img {
-        padding: 0;
-    }
-
-    .team-img,
-    .team-name {
-        margin: bottom 0;;
-    }
-}
-
-
-
 /* -------- Button -------- */
 
 .button-light {
@@ -333,21 +252,6 @@ header {
     cursor: pointer;
     color: #212731;
     transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media (max-width:767px) {
-    .button-light,
-    .button-dark {
-        font-size: 20px;
-        padding: 3px 12px;
-    }
-}
-
-@media (min-width:768px) and (max-width:1440px){
-    .button-light, .button-dark{
-        font-size: 17px;
-        padding: 2px 10px;
-    }
 }
 
 
@@ -410,100 +314,10 @@ nav {
     padding: 50px;
 }
 
-@media (max-width:767px) {
-    .nav{
-        display: none;
-    }
-    .nav-header{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .burger{
-        display: block;
-    }
-    header {
-        height: 470px;
-        width: 100%;
-        background-size: 130%, 300px;
-        margin: auto;
-    }
-
-    .logo-img {
-        justify-content: end;
-        width: 40px;
-        height: 40px;
-    }
-
-    .nav-header {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .nav:not(:last-child) {
-        margin-right: 40px;
-    }
-
-    .content {
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 0;
-        padding-bottom: 50px;
-    }
-
-    .active::before {
-        width: 90%;
-    }
-}
-
-
-@media (min-width:768px) and (max-width:1440px) {
-    header{
-        height: auto;
-        width: 100%;
-        background-size: 130%, 500px;
-        margin: auto;
-    }
-    .logo-link{
-        font-size: 25px;
-        justify-content: space-evenly;
-    }
-    .logo-img{
-        justify-content: end;
-        width: 30px;
-        height: 30px;
-    }
-    .nav-header{
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-}
-
-
-
 /* -------- Black Coffes -------- */
 
 .black-coffes {
     padding-top: 50px;
-}
-
-@media (max-width:767px) {
-    .figure-black-coffee,
-    .figure-hot-coffee,
-    .figure-white-coffee{
-        width: auto;
-    }
-}
-
-@media (min-width:768px) and (max-width:1440px){
-    .black-coffes{
-        padding-bottom: 20px;
-        padding-top: 50px;
-        flex-basis: 100%;
-    }
-    .figure-black-coffee{
-        width: 100%;
-        padding: 0;
-    }
 }
 
 /* -------- Hot Coffee -------- */
@@ -517,29 +331,12 @@ nav {
     text-align: right;
 }
 
-@media (min-width:768px) and (max-width:1440px) {
-    .figure-hot-coffee{
-        width: 100%;
-    }
-}
-
-@media (max-width:767px) {}
 
 /* -------- White Coffee -------- */
 .white-coffee{
     padding-bottom: 50px;
 }
 
-@media (min-width:768px) and (max-width:1440px) {
-    .figure-white-coffee{
-        width: 100%;
-    }
-    .white-coffee{
-        padding-top: 50px;
-    }
-}
-
-@media (max-width:767px) {}
 
 /* -------- Voucher -------- */
 
@@ -547,40 +344,11 @@ nav {
     padding-bottom: 50px;
 }
 
-@media (min-width:768px) and (max-width:1440px) {
-    .voucher{
-        padding-top: 50px;
-    }
-}
-
-@media (max-width:767px) {}
-
 /* -------- Customer Reviews -------- */
 
 .team {
     width: 485px;
     text-align: center;
-}
-
-@media (max-width:767px) {
-    .customer-reviews-block {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-@media (min-width:768px) and (max-width:1440px) {
-    .customer-reviews-block{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .customer-reviews{
-        padding-top: 50px;
-        padding-bottom: 150px;
-    }
-    .team:last-child{
-        margin-top: 50px;
-    }
 }
 
 
@@ -598,13 +366,6 @@ nav {
     margin-top: -2px;
     
 }
-
-@media (min-width:768px) and (max-width:1440px) {
-    .schedule{
-        margin-bottom: 50px;
-    }
-}
-@media (max-width:767px) {}
 
 
 /* -------- Branches -------- */
@@ -642,35 +403,6 @@ nav {
     border-width: 30px 15px;
     left: 0;
 }
-
-@media (max-width:767px) {
-    .branches-block {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-@media (min-width:768px) and (max-width:1440px) {
-    .branches-block {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .branches-list {
-        width: 45%;
-    }
-    .branches-list:first-child {
-        margin-right: 40px;
-    }
-    .branches-list:last-child{
-        margin-top: 40px;
-    }
-    .branches-section{
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-}
-
 
 /* -------- Footer ------ */
 
@@ -729,13 +461,144 @@ margin-right: 10px;
     background-color: #fff;
 }
 
+/* ----------------------- Media -------------------------- */
+
+
 @media (max-width:767px) {
+    .nav {
+        display: none;
+    }
+
+    .nav-header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    header {
+        height: 470px;
+        width: 100%;
+        background-size: 130%, 300px;
+        margin: auto;
+    }
+
+    .logo-img {
+        justify-content: end;
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .nav:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .content {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+
+    .active::before {
+        width: 90%;
+    }
     .info-block-right {
         display: none;
     }
+    .branches-block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .customer-reviews-block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .button-light,
+    .button-dark {
+        font-size: 20px;
+        padding: 3px 12px;
+    }
+    .img-section {
+        width: 250px;
+    }
+
+    .img-voucher {
+        width: 400px;
+        padding-right: 0;
+    }
+
+    .team-img {
+        width: 350px;
+    }
+
+    .img-branches {
+        margin-bottom: 10px;
+    }
+
+    .team-img {
+        padding: 0;
+    }
+
+    .team-img,
+    .team-name {
+        margin: bottom 0;
+    }
+
+    .black-coffes,
+    .hot-coffee,
+    .white-coffee,
+    .voucher,
+    .customer-reviews,
+    .open {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
 }
 
 @media (min-width:768px) and (max-width:1440px) {
+    header {
+        height: auto;
+        width: 100%;
+        background-size: 130%, 500px;
+        margin: auto;
+    }
+
+    .logo-link {
+        font-size: 25px;
+        justify-content: space-evenly;
+    }
+
+    .logo-img {
+        justify-content: end;
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .black-coffes,
+    .hot-coffee,
+    .white-coffee,
+    .voucher,
+    .customer-reviews,
+    .open {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
     .active-footer::before{
         width: 90%;
     }
@@ -747,5 +610,110 @@ margin-right: 10px;
         padding-top: 0;
         padding-bottom: 0;
     }
+    .branches-block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .branches-list {
+        width: 45%;
+    }
+
+    .branches-list:first-child {
+        margin-right: 40px;
+    }
+
+    .branches-list:last-child {
+        margin-top: 40px;
+    }
+
+    .branches-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .customer-reviews-block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .customer-reviews {
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+
+    .team:last-child {
+        margin-top: 50px;
+    }
+
+    .voucher {
+        padding-top: 50px;
+    }
+
+    .figure-white-coffee {
+        width: 100%;
+    }
+
+    .white-coffee {
+        padding-top: 50px;
+    }
+    .schedule {
+        margin-bottom: 50px;
+    }
+    .figure-hot-coffee {
+        width: 100%;
+    }
+    .black-coffes {
+        padding-bottom: 20px;
+        padding-top: 50px;
+        flex-basis: 100%;
+    }
+
+    .figure-black-coffee {
+        width: 100%;
+        padding: 0;
+    }
+
+    .figure-black-coffee,
+    .figure-hot-coffee,
+    .figure-white-coffee {
+        width: auto;
+    }
+
+    .button-light,
+    .button-dark {
+        font-size: 17px;
+        padding: 2px 10px;
+    }
+
+    .img-section {
+        width: 300px;
+    }
+
+    .img-voucher {
+        width: 550px;
+    }
+
+    .team-img {
+        width: 350px;
+    }
+
+    .img-branches {
+        margin-bottom: 20px;
+    }
+
+    .team-img {
+        padding: 0;
+    }
+
+    .team-img,
+    .team-name {
+        margin: bottom 0;
+        ;
+    }
+
+
+
+
+
 }
 
