@@ -120,6 +120,16 @@ figure {
     }
 }
 
+@media (min-width: 1024px) {
+
+    header,
+    section,
+    footer {
+        max-width: 1024px;
+        margin: auto;
+    }
+}
+
 @media (min-width: 1440px) {
 
     header,
@@ -462,7 +472,7 @@ margin-right: 10px;
 }
 
 /* ----------------------- Media -------------------------- */
-
+/* 
 
 @media (max-width:767px) {
     .nav {
@@ -716,4 +726,4 @@ margin-right: 10px;
 
 
 }
-
+ */
