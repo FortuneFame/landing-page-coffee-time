@@ -1,12 +1,12 @@
-
 /* -------- Global -------- */
 body {
     margin: auto;
     padding: 0;
-    min-width: 375px; 
+    min-width: 375px;
 }
 
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -62,18 +62,13 @@ figure {
     margin: 0;
 }
 
-.svg {
-    display: none;
-}
-
-/* -------- Styles Sections -------- */
-
 .black-coffes,
 .hot-coffee,
 .white-coffee,
 .voucher,
 .customer-reviews,
 .open {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 160px;
     padding-right: 160px;
@@ -83,9 +78,16 @@ figure {
 .hot-coffee,
 .white-coffee,
 .customer-reviews-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
 
@@ -133,16 +135,6 @@ figure {
     }
 }
 
-@media (min-width: 1024px) {
-
-    header,
-    section,
-    footer {
-        max-width: 1024px;
-        margin: auto;
-    }
-}
-
 @media (min-width: 1440px) {
 
     header,
@@ -153,8 +145,6 @@ figure {
     }
 }
 
-
-/* -------- Background -------- */
 
 header,
 .hot-coffee,
@@ -189,10 +179,8 @@ section {
     fill: #51565e;
 }
 
-/* -------- Images -------- */
 
-
-.backg1{
+.backg1 {
     position: absolute;
     bottom: -2px;
     z-index: 2;
@@ -207,7 +195,7 @@ section {
     width: 50%;
 }
 
-.backg2{
+.backg2 {
     position: absolute;
     z-index: 2;
     top: -2px;
@@ -215,7 +203,7 @@ section {
     width: 100%;
 }
 
-.backg3{
+.backg3 {
     position: absolute;
     z-index: 2;
     bottom: -2px;
@@ -223,7 +211,7 @@ section {
     width: 100%;
 }
 
-.backg4{
+.backg4 {
     position: absolute;
     z-index: 2;
     bottom: -2px;
@@ -233,6 +221,8 @@ section {
 
 .logo-img {
     fill: #fff;
+    -webkit-transform: rotate(0.92turn);
+    -ms-transform: rotate(0.92turn);
     transform: rotate(0.92turn);
 }
 
@@ -254,8 +244,6 @@ section {
     margin-bottom: 20px;
 }
 
-/* -------- Button -------- */
-
 .button-light {
     font-size: 33px;
     font-weight: 700;
@@ -271,6 +259,8 @@ section {
     background: transparent;
     border: 4px solid #29a19c;
     cursor: pointer;
+    -webkit-transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -289,22 +279,25 @@ section {
     border: 4px solid #212731;
     cursor: pointer;
     color: #212731;
+    -webkit-transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (max-width:767px){
+@media (max-width:767px) {
 
-    .button-light{
+    .button-light {
         border: 2px solid #29a19c;
     }
 
-    .button-dark{
+    .button-dark {
         border: 2px solid #212731;
     }
 
     .button-light:hover {
         border: 2px solid #29a19c;
     }
+
     .button-dark:hover {
         border: 2px solid #212731;
     }

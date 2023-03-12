@@ -1,10 +1,8 @@
-/* -------- Black Coffes -------- */
 
 .black-coffes {
     padding-top: 50px;
 }
 
-/* -------- Hot Coffee -------- */
 
 .hot-coffee {
     padding-top: 130px;
@@ -16,31 +14,26 @@
 }
 
 
-/* -------- White Coffee -------- */
 .white-coffee {
     padding-bottom: 50px;
 }
 
 
-/* -------- Voucher -------- */
 
 .voucher {
     padding-bottom: 50px;
 }
-
-/* -------- Customer Reviews -------- */
 
 .team {
     width: 485px;
     text-align: center;
 }
 
-.customer-reviews{
+.customer-reviews {
     padding-top: 100px;
     padding-bottom: 230px;
 }
 
-/* -------- Open -------- */
 
 .schedule {
     margin-bottom: 100px;
@@ -56,16 +49,17 @@
 
 }
 
-
-/* -------- Branches -------- */
-
 .branches-section {
     padding-top: 160px;
     padding-bottom: 160px;
 }
 
 .branches-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
@@ -95,7 +89,7 @@
 
 @media (max-width:767px) {
 
-    .black-coffes{
+    .black-coffes {
         padding-bottom: 50px;
     }
 
@@ -115,7 +109,10 @@
     }
 
     .branches-block {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -124,7 +121,7 @@
         padding-bottom: 80px;
     }
 
-    .open{
+    .open {
         padding-top: 50px;
     }
 
@@ -138,22 +135,25 @@
         padding-bottom: 70px;
     }
 
-    .branches-list{
+    .branches-list {
         margin-bottom: 20px;
-    }   
+    }
 
     .customer-reviews-block {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
 
-    .hot-coffee{
+    .hot-coffee {
         padding-top: 50px;
         padding-bottom: 50px;
     }
 
-    .white-coffee{
+    .white-coffee {
         padding-top: 50px;
     }
 
@@ -198,6 +198,7 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .backg1 {
         position: absolute;
         bottom: 0;
@@ -222,7 +223,10 @@
 
 
     .branches-block {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -244,7 +248,10 @@
     }
 
     .customer-reviews-block {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -276,6 +283,7 @@
     .black-coffes {
         padding-bottom: 20px;
         padding-top: 50px;
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
 
@@ -327,9 +335,12 @@
     }
 }
 
-@media (min-width:1440px){
+@media (min-width:1440px) {
     .customer-reviews-block {
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
 }

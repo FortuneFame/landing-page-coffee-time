@@ -126,7 +126,7 @@
     font-weight: 700;
 }
 
-.title-form{
+.title-form {
     font-size: 60px;
     line-height: 120px;
     font-weight: 400;
@@ -135,11 +135,11 @@
 
 @media (max-width:767px) {
 
-    .nav-list{
+    .nav-list {
         font-size: 0;
     }
 
-    .nav-link{
+    .nav-link {
         font-size: 10px;
     }
 
@@ -231,7 +231,7 @@
         line-height: 23px;
     }
 
-    .title-form{
+    .title-form {
         font-size: 30px;
         line-height: 20px;
         padding-top: 70px;
@@ -331,6 +331,7 @@
         font-size: 15px;
         line-height: 23px;
     }
+
     .title-form {
         font-size: 49px;
         line-height: 40px;
@@ -341,12 +342,13 @@
     }
 }
 
-@media (min-width:1440px){
-    .title-main{
+@media (min-width:1440px) {
+    .title-main {
         font-size: 140px;
         padding-bottom: 25px;
     }
-    .text-header{
+
+    .text-header {
         font-size: 23px;
         line-height: 40px;
     }

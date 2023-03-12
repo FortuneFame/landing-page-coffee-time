@@ -1,33 +1,36 @@
 .coffee-header-bottom {
     top: 740px;
-    left: 216px;
+    left: 138px;
+    -webkit-transform: rotate(0.8turn);
+    -ms-transform: rotate(0.8turn);
     transform: rotate(0.8turn);
 }
 
-
 .kettle-header {
     top: 537px;
-    left: 409px;
+    left: 600px;
 }
 
 .cup-header {
     top: 157px;
-    left: 827px;
+    left: 1000px;
 }
 
 .coffee-header {
     top: 381px;
-    left: 651px;
+    left: 800px;
 }
 
 .coffee-black-top {
-    left: 589px;
+    left: 450px;
     top: 100px;
 }
 
 .coffee-black-left {
     left: 194px;
     top: 700px;
+    -webkit-transform: rotate(0.8turn);
+    -ms-transform: rotate(0.8turn);
     transform: rotate(0.8turn);
 }
 
@@ -53,12 +56,16 @@
 .cup-hot {
     left: 50px;
     top: 200px;
+    -webkit-transform: rotate(0.9turn);
+    -ms-transform: rotate(0.9turn);
     transform: rotate(0.9turn);
 }
 
 .kettle-hot {
-    left: 900px;
+    left: 800px;
     top: 680px;
+    -webkit-transform: rotate(1.15turn);
+    -ms-transform: rotate(1.15turn);
     transform: rotate(1.15turn)
 }
 
@@ -70,41 +77,55 @@
 .coffee-white-top {
     top: 10px;
     left: 300px;
+    -webkit-transform: rotate(0.85turn);
+    -ms-transform: rotate(0.85turn);
     transform: rotate(0.85turn);
 }
 
 .coffee-white {
     left: 605px;
+    -webkit-transform: rotate(0.8turn);
+    -ms-transform: rotate(0.8turn);
     transform: rotate(0.8turn);
 }
 
 .cup-white {
     left: 1340px;
     top: 110px;
+    -webkit-transform: rotate(1.1turn) scaleX(-1);
+    -ms-transform: rotate(1.1turn) scaleX(-1);
     transform: rotate(1.1turn) scaleX(-1);
 }
 
 .kettle-white {
     bottom: 0;
     left: 270px;
+    -webkit-transform: rotate(0.85turn) scaleX(-1);
+    -ms-transform: rotate(0.85turn) scaleX(-1);
     transform: rotate(0.85turn) scaleX(-1);
 }
 
 .cup-voucher {
     top: 400px;
     left: 110px;
+    -webkit-transform: rotate(0.92turn);
+    -ms-transform: rotate(0.92turn);
     transform: rotate(0.92turn);
 }
 
 .kettle-voucher {
     left: 1200px;
     top: 500px;
+    -webkit-transform: rotate(1.15turn);
+    -ms-transform: rotate(1.15turn);
     transform: rotate(1.15turn);
 }
 
 .coffee-voucher {
     top: 50px;
     left: 1250px;
+    -webkit-transform: rotate(0.85turn);
+    -ms-transform: rotate(0.85turn);
     transform: rotate(0.85turn);
 }
 
@@ -116,6 +137,8 @@
 .kettle-team {
     top: 580px;
     left: 60px;
+    -webkit-transform: scaleX(-1) rotate(1.15turn);
+    -ms-transform: scaleX(-1) rotate(1.15turn);
     transform: scaleX(-1) rotate(1.15turn);
 }
 
@@ -127,6 +150,8 @@
 .coffee-open-left {
     top: 0;
     left: 100px;
+    -webkit-transform: rotate(0.85turn);
+    -ms-transform: rotate(0.85turn);
     transform: rotate(0.85turn);
 }
 
@@ -138,12 +163,16 @@
 .kettle-open {
     top: 0;
     left: 1200px;
+    -webkit-transform: rotate(1.15turn);
+    -ms-transform: rotate(1.15turn);
     transform: rotate(1.15turn);
 }
 
 .cup-open {
     top: 250px;
     left: 200px;
+    -webkit-transform: rotate(0.92turn);
+    -ms-transform: rotate(0.92turn);
     transform: rotate(0.92turn);
 }
 
@@ -155,17 +184,564 @@
 .coffee-branches-right {
     top: 200px;
     left: 1320px;
+    -webkit-transform: rotate(0.85turn);
+    -ms-transform: rotate(0.85turn);
     transform: rotate(0.85turn);
 }
 
 .kettle-branches {
     left: 430px;
     top: 770px;
+    -webkit-transform: rotate(1.15turn);
+    -ms-transform: rotate(1.15turn);
     transform: rotate(1.15turn);
 }
 
 .cup-branches {
     left: 930px;
     top: 800px;
+    -webkit-transform: rotate(0.92turn);
+    -ms-transform: rotate(0.92turn);
     transform: rotate(0.92turn);
+}
+
+@media (max-width:767px) {
+    // --------------- Header ----------------
+
+    .coffee-header-bottom {
+        top: 77%;
+        left: 10%;
+        width: 40px;
+        -webkit-transform: rotate(0.8turn);
+        -ms-transform: rotate(0.8turn);
+        transform: rotate(0.8turn);
+    }
+
+    .kettle-header {
+        top: 14%;
+        width: 40px;
+        left: 84%;
+    }
+
+
+    .cup-header {
+        top: 49%;
+        left: 80%;
+        width: 40px;
+    }
+
+    .coffee-header {
+        display: none;
+    }
+
+    // ----------------- Black -----------------
+
+    .coffee-black-top {
+        left: 90%;
+        top: 48%;
+        width: 25px;
+    }
+
+    .coffee-black-left {
+        left: 16%;
+        top: -11px;
+        width: 30px;
+        -webkit-transform: rotate(0.8turn);
+        -ms-transform: rotate(0.8turn);
+        transform: rotate(0.8turn);
+    }
+
+    .coffee-black-right {
+        left: 7%;
+        top: 85%;
+        width: 24px;
+    }
+
+    .kettle-black {
+        left: 39%;
+        top: 52%;
+        width: 40px;
+    }
+
+    .cup-black {
+        left: 88%;
+        top: -20px;
+        width: 30px;
+    }
+
+    // -------------- Hot ---------------
+
+    .coffee-hot-top {
+        display: none;
+    }
+
+    .cup-hot {
+        left: 56%;
+        top: 11%;
+        width: 30px;
+        -webkit-transform: rotate(0.9turn);
+        -ms-transform: rotate(0.9turn);
+        transform: rotate(0.9turn);
+    }
+
+    .kettle-hot {
+        left: 44%;
+        top: 73%;
+        width: 40px;
+        -webkit-transform: rotate(1.15turn);
+        -ms-transform: rotate(1.15turn);
+        transform: rotate(1.15turn)
+    }
+
+    .coffee-hot-right {
+        left: 85%;
+        top: 55%;
+        width: 23px;
+    }
+
+    // -------------- White ---------------
+
+    .coffee-white-top {
+        left: 23%;
+        width: 19px;
+        -webkit-transform: rotate(0.85turn);
+        -ms-transform: rotate(0.85turn);
+        transform: rotate(0.85turn);
+    }
+
+    .coffee-white {
+        left: 38%;
+        width: 20px;
+        top: 30%;
+        -webkit-transform: rotate(0.8turn);
+        -ms-transform: rotate(0.8turn);
+        transform: rotate(0.8turn);
+    }
+
+    .cup-white {
+        left: 90%;
+        top: -8%;
+        width: 30px;
+        -webkit-transform: rotate(1.1turn) scaleX(-1);
+        -ms-transform: rotate(1.1turn) scaleX(-1);
+        transform: rotate(1.1turn) scaleX(-1);
+    }
+
+    .kettle-white {
+        bottom: 13%;
+        left: 12%;
+        width: 35px;
+        -webkit-transform: rotate(0.85turn) scaleX(-1);
+        -ms-transform: rotate(0.85turn) scaleX(-1);
+        transform: rotate(0.85turn) scaleX(-1);
+    }
+
+    // -------------- Voucher ---------------
+
+    .cup-voucher {
+        top: 72%;
+        left: 5%;
+        width: 32px;
+        -webkit-transform: rotate(0.92turn);
+        -ms-transform: rotate(0.92turn);
+        transform: rotate(0.92turn);
+    }
+
+    .kettle-voucher {
+        left: 81%;
+        top: 70%;
+        width: 43px;
+        -webkit-transform: rotate(1.15turn);
+        -ms-transform: rotate(1.15turn);
+        transform: rotate(1.15turn);
+    }
+
+    .coffee-voucher {
+        left: 79%;
+        top: -7%;
+        width: 23px;
+        -webkit-transform: rotate(0.85turn);
+        -ms-transform: rotate(0.85turn);
+        transform: rotate(0.85turn);
+    }
+
+    // -------------- Team ---------------
+
+    .coffee-team {
+        left: 11%;
+        top: 12%;
+        width: 30px;
+    }
+
+    .kettle-team {
+        top: 50%;
+        left: 82%;
+        width: 50px;
+        -webkit-transform: scaleX(-1) rotate(1.15turn);
+        -ms-transform: scaleX(-1) rotate(1.15turn);
+        transform: scaleX(-1) rotate(1.15turn);
+    }
+
+    .cup-team {
+        top: 89%;
+        left: 14%;
+        width: 30px;
+    }
+
+    // -------------- Open ---------------
+
+    .coffee-open-left {
+        top: 0;
+        left: 4%;
+        width: 30px;
+        -webkit-transform: rotate(0.85turn);
+        -ms-transform: rotate(0.85turn);
+        transform: rotate(0.85turn);
+    }
+
+    .coffee-open {
+        top: 79%;
+        left: 87%;
+        width: 30px;
+    }
+
+    .kettle-open {
+        top: -8%;
+        left: 85%;
+        width: 40px;
+        -webkit-transform: rotate(1.15turn);
+        -ms-transform: rotate(1.15turn);
+        transform: rotate(1.15turn);
+    }
+
+    .cup-open {
+        top: 72%;
+        left: 3%;
+        width: 40px;
+        -webkit-transform: rotate(0.92turn);
+        -ms-transform: rotate(0.92turn);
+        transform: rotate(0.92turn);
+    }
+
+    // -------------- Branches ---------------
+
+    .coffee-branches-left {
+        top: 25%;
+        left: 12%;
+        width: 30px;
+    }
+
+    .coffee-branches-right {
+        top: 55%;
+        left: 83%;
+        width: 30px;
+        -webkit-transform: rotate(0.85turn);
+        -ms-transform: rotate(0.85turn);
+        transform: rotate(0.85turn);
+    }
+
+    .kettle-branches {
+        left: 8%;
+        top: 83%;
+        width: 40px;
+        -webkit-transform: rotate(1.15turn);
+        -ms-transform: rotate(1.15turn);
+        transform: rotate(1.15turn);
+    }
+
+    .cup-branches {
+        left: 72%;
+        top: 93%;
+        width: 40px;
+        -webkit-transform: rotate(0.92turn);
+        -ms-transform: rotate(0.92turn);
+        transform: rotate(0.92turn);
+    }
+
+    .coffee-modal-left {
+        top: 80%;
+        left: 12%;
+        width: 20px;
+    }
+
+    .kettle-modal {
+        top: 77%;
+        left: 80%;
+        width: 25px;
+    }
+
+    .cup-modal {
+        top: -2%;
+        left: 44%;
+        width: 25px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1439px) {
+
+    // --------------- Header ----------------
+
+    .coffee-header-bottom {
+        top: 19%;
+        left: 80%;
+        width: 40px;
+        -webkit-transform: rotate(0.8turn);
+        -ms-transform: rotate(0.8turn);
+        transform: rotate(0.8turn);
+    }
+
+    .kettle-header {
+        top: 40%;
+        width: 60px;
+        left: 450px;
+    }
+
+    .cup-header {
+        top: 60%;
+        left: 300px;
+        width: 50px;
+    }
+
+    .coffee-header {
+        top: 80%;
+        left: 130px;
+        width: 35px;
+    }
+
+    // ----------------- Black -----------------
+
+    .coffee-black-top {
+        left: 90%;
+        top: 55%;
+        width: 25px;
+    }
+
+    .coffee-black-left {
+        left: 20%;
+        top: 0;
+        width: 45px;
+        -webkit-transform: rotate(0.8turn);
+        -ms-transform: rotate(0.8turn);
+        transform: rotate(0.8turn);
+    }
+
+    .coffee-black-right {
+        left: 20%;
+        top: 80%;
+        width: 50px;
+    }
+
+    .kettle-black {
+        left: 41%;
+        width: 70px;
+    }
+
+    .cup-black {
+        left: 88%;
+        top: 0;
+        width: 40px;
+    }
+
+    // -------------- Hot ---------------
+
+    .coffee-hot-top {
+        left: 60%;
+        top: 20%;
+        width: 30px;
+    }
+
+    .cup-hot {
+        left: 2%;
+        top: 15%;
+        -webkit-transform: rotate(0.9turn);
+        -ms-transform: rotate(0.9turn);
+        transform: rotate(0.9turn);
+    }
+
+    .kettle-hot {
+        left: 57%;
+        top: 70%;
+        width: 60px;
+        -webkit-transform: rotate(1.15turn);
+        -ms-transform: rotate(1.15turn);
+        transform: rotate(1.15turn)
+    }
+
+    .coffee-hot-right {
+        left: 93%;
+        top: 45%;
+        width: 30px;
+    }
+
+    // -------------- White ---------------
+
+    .coffee-white-top {
+        left: 20%;
+        width: 30px;
+        -webkit-transform: rotate(0.85turn);
+        -ms-transform: rotate(0.85turn);
+        transform: rotate(0.85turn);
+    }
+
+    .coffee-white {
+        left: 44%;
+        width: 30px;
+        -webkit-transform: rotate(0.8turn);
+        -ms-transform: rotate(0.8turn);
+        transform: rotate(0.8turn);
+    }
+
+    .cup-white {
+        left: 90%;
+        top: 0;
+        width: 40px;
+        -webkit-transform: rotate(1.1turn) scaleX(-1);
+        -ms-transform: rotate(1.1turn) scaleX(-1);
+        transform: rotate(1.1turn) scaleX(-1);
+    }
+
+    .kettle-white {
+        bottom: 0;
+        left: 25%;
+        width: 60px;
+        -webkit-transform: rotate(0.85turn) scaleX(-1);
+        -ms-transform: rotate(0.85turn) scaleX(-1);
+        transform: rotate(0.85turn) scaleX(-1);
+    }
+
+    // -------------- Voucher ---------------
+
+    .cup-voucher {
+        top: 45%;
+        left: 5%;
+        width: 40px;
+        -webkit-transform: rotate(0.92turn);
+        -ms-transform: rotate(0.92turn);
+        transform: rotate(0.92turn);
+    }
+
+    .kettle-voucher {
+        left: 90%;
+        top: 70%;
+        width: 60px;
+        -webkit-transform: rotate(1.15turn);
+        -ms-transform: rotate(1.15turn);
+        transform: rotate(1.15turn);
+    }
+
+    .coffee-voucher {
+        left: 92%;
+        top: 20%;
+        width: 40px;
+        -webkit-transform: rotate(0.85turn);
+        -ms-transform: rotate(0.85turn);
+        transform: rotate(0.85turn);
+    }
+
+    // -------------- Team ---------------
+
+    .coffee-team {
+        left: 7%;
+        top: 8%;
+    }
+
+    .kettle-team {
+        top: 46%;
+        left: 83%;
+        width: 100px;
+        -webkit-transform: scaleX(-1) rotate(1.15turn);
+        -ms-transform: scaleX(-1) rotate(1.15turn);
+        transform: scaleX(-1) rotate(1.15turn);
+    }
+
+    .cup-team {
+        top: 88%;
+        left: 56%;
+    }
+
+    // -------------- Open ---------------
+
+    .coffee-open-left {
+        top: 0;
+        left: 10%;
+        -webkit-transform: rotate(0.85turn);
+        -ms-transform: rotate(0.85turn);
+        transform: rotate(0.85turn);
+    }
+
+    .coffee-open {
+        top: 73%;
+        left: 80%;
+        width: 50px;
+    }
+
+    .kettle-open {
+        top: 0;
+        left: 80%;
+        width: 60px;
+        -webkit-transform: rotate(1.15turn);
+        -ms-transform: rotate(1.15turn);
+        transform: rotate(1.15turn);
+    }
+
+    .cup-open {
+        top: 60%;
+        left: 10%;
+        width: 60px;
+        -webkit-transform: rotate(0.92turn);
+        -ms-transform: rotate(0.92turn);
+        transform: rotate(0.92turn);
+    }
+
+    // -------------- Branches ---------------
+
+    .coffee-branches-left {
+        top: 7%;
+        left: 11%;
+    }
+
+    .coffee-branches-right {
+        top: 8%;
+        left: 81%;
+        -webkit-transform: rotate(0.85turn);
+        -ms-transform: rotate(0.85turn);
+        transform: rotate(0.85turn);
+    }
+
+    .kettle-branches {
+        left: 10%;
+        top: 70%;
+        -webkit-transform: rotate(1.15turn);
+        -ms-transform: rotate(1.15turn);
+        transform: rotate(1.15turn);
+    }
+
+    .cup-branches {
+        left: 78%;
+        top: 69%;
+        -webkit-transform: rotate(0.92turn);
+        -ms-transform: rotate(0.92turn);
+        transform: rotate(0.92turn);
+    }
+
+    // --------------------- Modal -----------------------
+
+    .coffee-modal-left {
+        top: 80%;
+        left: 12%;
+        width: 30px;
+    }
+
+    .kettle-modal {
+        top: 77%;
+        left: 80%;
+        width: 49px;
+    }
+
+    .cup-modal {
+        top: -2%;
+        left: 44%;
+        width: 39px;
+    }
+
 }
