@@ -504,21 +504,24 @@ nav {
 }
 
 @media (max-width: 767px) {
+  .burger {
+    display: block;
+  }
   .coffee1 {
     width: 70%;
   }
-  .nav {
-    display: none;
-  }
   .nav-header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    justify-content: space-between;
+    display: flex;
+  }
+  .nav-list {
     padding-left: 20px;
     padding-right: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-  .burger {
-    display: block;
+  .nav:not(:last-child) {
+    margin-right: 15px;
   }
   header {
     width: 100%;
@@ -1119,6 +1122,9 @@ nav {
 }
 
 @media (max-width: 767px) {
+  .nav-link {
+    font-size: 10px;
+  }
   .logo-link {
     font-size: 22px;
   }
