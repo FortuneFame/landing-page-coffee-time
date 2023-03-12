@@ -173,6 +173,7 @@
 body {
   margin: auto;
   padding: 0;
+  min-width: 375px;
 }
 
 html {
@@ -444,12 +445,21 @@ section {
   transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* -------- Header -------- */
-.burger {
-  display: none;
-  fill: #fff;
+@media (max-width: 767px) {
+  .button-light {
+    border: 2px solid #29a19c;
+  }
+  .button-dark {
+    border: 2px solid #212731;
+  }
+  .button-light:hover {
+    border: 2px solid #29a19c;
+  }
+  .button-dark:hover {
+    border: 2px solid #212731;
+  }
 }
-
+/* -------- Header -------- */
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -482,6 +492,10 @@ nav {
   position: relative;
 }
 
+.nav-list {
+  display: flex;
+}
+
 .active::before {
   position: absolute;
   content: "";
@@ -503,9 +517,96 @@ nav {
   padding-bottom: 140px;
 }
 
+#checkbox-toggle {
+  display: none;
+}
+
+.burger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.burger-line {
+  background-color: #fff;
+  display: block;
+  height: 2px;
+  width: 24px;
+  position: relative;
+  border-radius: 2px;
+}
+
+.burger-line::after,
+.burger-line::before {
+  background-color: #fff;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all 0.2s;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.burger-line::before {
+  top: 7px;
+}
+
+.burger-line::after {
+  top: -7px;
+}
+
 @media (max-width: 767px) {
+  .nav-list {
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    border: 3px solid #29a19c;
+    border-radius: 30px;
+  }
+  .nav-list li {
+    transition: all 0.3s;
+  }
+  .nav-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  #checkbox-toggle:checked ~ .nav-list {
+    margin-top: 110px;
+    display: flex;
+    max-height: 100%;
+    transition: all 0.3s;
+    justify-content: space-around;
+  }
+  #checkbox-toggle:checked ~ .burger .burger-line {
+    background: transparent;
+  }
+  #checkbox-toggle:checked ~ .burger .burger-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  #checkbox-toggle:checked ~ .burger .burger-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
   .burger {
     display: block;
+    padding: 20px 0;
+  }
+  .nav-header {
+    justify-content: space-between;
   }
   .coffee1 {
     width: 70%;
@@ -513,14 +614,7 @@ nav {
   .nav-header {
     display: flex;
   }
-  .nav-list {
-    padding-left: 20px;
-    padding-right: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .nav:not(:last-child) {
+  .nav-item:not(:last-child) {
     margin-right: 15px;
   }
   header {
@@ -535,12 +629,31 @@ nav {
   .content {
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 25px;
-    padding-bottom: 140px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+  }
+  .active::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 85%;
+    bottom: -2px;
+    left: 3px;
+    background-color: #29a19c;
+  }
+  .nav-header {
+    flex-direction: column;
+    max-width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #212731;
+  }
+  .logo-link {
+    width: auto;
   }
 }
-@media (min-width: 768px) and (max-width: 1440px) {
-  .nav:not(:last-child) {
+@media (min-width: 768px) and (max-width: 1439px) {
+  .nav-item:not(:last-child) {
     margin-right: 30px;
   }
   .logo-link {
@@ -554,8 +667,32 @@ nav {
     height: 30px;
   }
   .nav-header {
+    flex-direction: column;
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+@media (min-width: 1441px) {
+  .nav-header {
+    flex-direction: column;
+  }
+  .nav-link {
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .content {
+    padding-bottom: 200px;
+  }
+  .nav-header {
+    flex-direction: column;
+  }
+  .nav-item {
+    margin-right: 50px;
+  }
+  .logo-link {
+    justify-content: space-between;
+    width: auto;
   }
 }
 /* -------- Black Coffes -------- */
@@ -663,17 +800,33 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .customer-reviews-block {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   .customer-reviews {
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
+  }
+  .open {
+    padding-top: 50px;
+  }
+  .team {
+    margin-bottom: 25px;
   }
   .branches-section {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+  .branches-list {
+    margin-bottom: 20px;
+  }
+  .customer-reviews-block {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .hot-coffee {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .white-coffee {
+    padding-top: 50px;
   }
   .button-light,
   .button-dark {
@@ -709,8 +862,14 @@ nav {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .backg1 {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 113%;
+  }
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .black-coffes,
   .hot-coffee,
   .white-coffee,
@@ -803,6 +962,12 @@ nav {
     margin: bottom 0;
   }
 }
+@media (min-width: 1440px) {
+  .customer-reviews-block {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 /* -------- Footer ------ */
 .info-block {
   display: flex;
@@ -865,6 +1030,7 @@ nav {
   }
   .info-block {
     flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 20px;
     padding-top: 20px;
   }
@@ -985,6 +1151,54 @@ nav {
   margin-top: 20px;
 }
 
+@media (max-width: 767px) {
+  .order-modal {
+    width: 230px;
+    height: 350px;
+    border-radius: 20px;
+  }
+  .btn-close {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .modal-input {
+    width: 50%;
+    margin-bottom: 15px;
+    font-size: 12px;
+    border: 2px solid #757575;
+    padding: 5px 35px;
+  }
+  .modal-input:focus {
+    border: 2px solid #29a19c;
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .order-modal {
+    width: 340px;
+    height: 400px;
+  }
+  .btn-close {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .btn-close:hover {
+    border: 3px solid #29a19c;
+  }
+  .modal-input {
+    width: 70%;
+    margin-bottom: 20px;
+    font-size: 12px;
+    border: 3px solid #757575;
+    padding: 10px 35px;
+  }
+  .modal-input:focus {
+    border: 3px solid #29a19c;
+  }
+}
 .text-header {
   width: 460px;
   font-size: 15px;
@@ -1006,7 +1220,6 @@ nav {
 }
 
 .nav-list {
-  display: flex;
   font-size: 25px;
   font-weight: 700;
 }
@@ -1122,6 +1335,9 @@ nav {
 }
 
 @media (max-width: 767px) {
+  .nav-list {
+    font-size: 0;
+  }
   .nav-link {
     font-size: 10px;
   }
@@ -1163,13 +1379,13 @@ nav {
     line-height: 58px;
   }
   .title-open {
-    font-size: 75px;
+    font-size: 70px;
     line-height: 80px;
     margin-bottom: 50px;
   }
   .week,
   .time {
-    font-size: 30px;
+    font-size: 25px;
   }
   .text-team {
     font-size: 13px;
@@ -1197,8 +1413,16 @@ nav {
     font-size: 15px;
     line-height: 23px;
   }
+  .title-form {
+    font-size: 30px;
+    line-height: 20px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .nav-list {
     font-size: 18px;
   }
@@ -1216,8 +1440,6 @@ nav {
   .text-header {
     font-size: 12px;
     width: 38%;
-  }
-  .text-header {
     margin-bottom: 15px;
   }
   .title-section {
@@ -1273,5 +1495,23 @@ nav {
   .address-link {
     font-size: 15px;
     line-height: 23px;
+  }
+  .title-form {
+    font-size: 49px;
+    line-height: 40px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 1440px) {
+  .title-main {
+    font-size: 140px;
+    padding-bottom: 25px;
+  }
+  .text-header {
+    font-size: 23px;
+    line-height: 40px;
   }
 }/*# sourceMappingURL=main.css.map */

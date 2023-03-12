@@ -3,6 +3,7 @@
 body {
     margin: auto;
     padding: 0;
+    min-width: 375px; 
 }
 
 html {
@@ -289,4 +290,22 @@ section {
     cursor: pointer;
     color: #212731;
     transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width:767px){
+
+    .button-light{
+        border: 2px solid #29a19c;
+    }
+
+    .button-dark{
+        border: 2px solid #212731;
+    }
+
+    .button-light:hover {
+        border: 2px solid #29a19c;
+    }
+    .button-dark:hover {
+        border: 2px solid #212731;
+    }
 }

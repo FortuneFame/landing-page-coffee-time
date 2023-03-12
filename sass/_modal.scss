@@ -82,9 +82,55 @@
 }
 
 @media (max-width:767px){
-    
+    .order-modal{
+        width: 230px;
+        height: 350px;
+        border-radius: 20px;
+    }
+    .btn-close{
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .modal-input{
+        width: 50%;
+        margin-bottom: 15px;
+        font-size: 12px;
+        border: 2px solid #757575;
+        padding: 5px 35px;
+    }
+    .modal-input:focus{
+        border: 2px solid #29a19c;
+    }
 }
 
 @media (min-width:768px) and (max-width:1440px){
+    .order-modal {
+        width: 340px;
+        height: 400px;
+    }
 
+    .btn-close {
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .btn-close:hover{
+        border: 3px solid #29a19c;
+    }
+
+    .modal-input {
+        width: 70%;
+        margin-bottom: 20px;
+        font-size: 12px;
+        border: 3px solid #757575;
+        padding: 10px 35px;
+    }
+
+    .modal-input:focus {
+        border: 3px solid #29a19c;
+    }
 }
