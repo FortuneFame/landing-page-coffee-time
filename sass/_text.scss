@@ -127,7 +127,18 @@
     font-weight: 700;
 }
 
+.title-form{
+    font-size: 60px;
+    line-height: 120px;
+    font-weight: 400;
+    padding: 50px;
+}
+
 @media (max-width:767px) {
+
+    .nav-link{
+        font-size: 10px;
+    }
 
     .logo-link {
         font-size: 22px;
@@ -218,7 +229,7 @@
     }
 }
 
-@media (min-width:768px) and (max-width:1024px) {
+@media (min-width:768px) and (max-width:1440px) {
     .nav-list {
         font-size: 18px;
     }
