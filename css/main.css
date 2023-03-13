@@ -205,6 +205,24 @@
   transform: rotate(0.92turn);
 }
 
+.coffee-modal-left {
+  top: 80%;
+  left: 12%;
+  width: 30px;
+}
+
+.kettle-modal {
+  top: 77%;
+  left: 80%;
+  width: 49px;
+}
+
+.cup-modal {
+  top: -2%;
+  left: 44%;
+  width: 39px;
+}
+
 @media (max-width: 767px) {
   .coffee-header-bottom {
     top: 77%;
@@ -624,21 +642,6 @@
     -webkit-transform: rotate(0.92turn);
     -ms-transform: rotate(0.92turn);
     transform: rotate(0.92turn);
-  }
-  .coffee-modal-left {
-    top: 80%;
-    left: 12%;
-    width: 30px;
-  }
-  .kettle-modal {
-    top: 77%;
-    left: 80%;
-    width: 49px;
-  }
-  .cup-modal {
-    top: -2%;
-    left: 44%;
-    width: 39px;
   }
 }
 /* -------- Global -------- */
@@ -1773,7 +1776,7 @@ nav {
     border: 2px solid #29a19c;
   }
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .order-modal {
     width: 340px;
     height: 400px;

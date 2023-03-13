@@ -205,6 +205,24 @@
     transform: rotate(0.92turn);
 }
 
+.coffee-modal-left {
+    top: 80%;
+    left: 12%;
+    width: 30px;
+}
+
+.kettle-modal {
+    top: 77%;
+    left: 80%;
+    width: 49px;
+}
+
+.cup-modal {
+    top: -2%;
+    left: 44%;
+    width: 39px;
+}
+
 @media (max-width:767px) {
     // --------------- Header ----------------
 
@@ -723,25 +741,4 @@
         -ms-transform: rotate(0.92turn);
         transform: rotate(0.92turn);
     }
-
-    // --------------------- Modal -----------------------
-
-    .coffee-modal-left {
-        top: 80%;
-        left: 12%;
-        width: 30px;
-    }
-
-    .kettle-modal {
-        top: 77%;
-        left: 80%;
-        width: 49px;
-    }
-
-    .cup-modal {
-        top: -2%;
-        left: 44%;
-        width: 39px;
-    }
-
 }
