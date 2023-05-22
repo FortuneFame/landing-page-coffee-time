@@ -8,13 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
     <title>Coffee Time</title>
 </head>
 
 <body>
     <header>
         <div class="nav-header">
-            <nav id="openNav" class="nav">
+            <nav id="openNav" class="nav" data-aos="zoom-out-down">
                 <input type="checkbox" id="checkbox-toggle">
                 <label for="checkbox-toggle" class="burger">
                     <span class="burger-line"></span>
@@ -27,8 +28,9 @@
                     <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                 </ul>
-                <a class="logo-link" href="#">
-                    <svg class="logo-img" width="50" height="50">
+                <a class="logo-link" href="#" data-aos="zoom-out-down">
+                    <svg class="logo-img" width="50" height="50"
+                        data-aos="zoom-out-down">
                         <use href="./img/icon/icon-sprite.svg#coffee"></use>
                     </svg>
                     YOUR LOGO
@@ -43,18 +45,18 @@
                 incididunt ut
                 labore et dolore magna
                 aliqua.</p>
-            <a href="#openModal" class="button-light">Order Now</a>
+            <a href="#" class="orderNow button-light">Order Now</a>
         </div>
-        <svg class="svg coffee-header" width="51" height="57">
+        <svg class="coffee-header svg" width="51" height="57">
             <use href="./img/icon/icon-sprite.svg#coffee"></use>
         </svg>
-        <svg class="svg kettle-header" width="88" height="95">
+        <svg class="kettle-header svg" width="88" height="95">
             <use href="./img/icon/icon-sprite.svg#kettle"></use>
         </svg>
-        <svg class="svg cup-header" width="59" height="77">
+        <svg class="cup-header svg" width="59" height="77">
             <use href="./img/icon/icon-sprite.svg#cup"></use>
         </svg>
-        <svg class="svg coffee-header-bottom" width="80" height="82">
+        <svg class="coffee-header-bottom svg" width="80" height="82">
             <use href="./img/icon/icon-sprite.svg#coffee"></use>
         </svg>
         <img class="backg1" src="./img/bpage1.png" alt="">
@@ -64,10 +66,13 @@
     <section class="black-coffes">
         <div class="black-block-left">
             <h2 class="title-section text-left">Black Coffees</h2>
-            <a href="#openModal" class="button-dark">Order Now</a>
+            <a href="#" class="orderNow button-dark">Order Now</a>
         </div>
         <div class="black-block-right">
-            <figure class="figure-black-coffee">
+            <figure class="figure-black-coffee" 
+                data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <img class="img-section" src="./img/coffee2.png" alt="#">
                 <figcaption class="figcap-black-coffee">
                     <p class="text-content text-right">Lorem ipsum dolor sit amet, consectetur adipis
@@ -95,7 +100,10 @@
     </section>
     <section class="hot-coffee">
         <div class="hot-bllock-left">
-            <figure class="figure-hot-coffee">
+            <figure class="figure-hot-coffee" 
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <img src="./img/coffee3.png" alt="#" class="img-section">
                 <figcaption class="figcap-hot-coffee">
                     <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipis
@@ -107,7 +115,7 @@
         </div>
         <div class="hot-block-right">
             <h2 class="title-section text-right">Hot Coffees</h2>
-            <a href="#openModal" class="button-light">Order Now</a>
+            <a href="#" class="orderNow button-light">Order Now</a>
         </div>
         <svg class="svg coffee-hot-top" width="53" height="60">
             <use href="./img/icon/icon-sprite.svg#coffee"></use>
@@ -126,10 +134,13 @@
     <section class="white-coffee">
         <div class="white-bllock-left">
             <h2 class="title-section">White Coffees</h2>
-            <a href="#openModal" class="button-light">Order Now</a>
+            <a href="#" class="orderNow button-light">Order Now</a>
         </div>
         <div class="white-block-right">
-            <figure class="figure-white-coffee">
+            <figure class="figure-white-coffee"
+                data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <img src="./img/coffee4.png" alt="#" class="img-section">
                 <figcaption class="figcap-white-coffee">
                     <p class="text-content text-right">Lorem ipsum dolor sit amet, consectetur adipis
@@ -153,13 +164,16 @@
         </svg>
     </section>
     <section class="voucher text-center">
-        <figure class="text-center">
+        <figure class="text-center"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
             <figcaption>
                 <h2 class="title-voucher text-center">Voucher</h2>
             </figcaption>
             <img src="./img/voucher.png" alt="voucher" class="img-voucher">
         </figure>
-        <a href="#openModal" class="button-light">Get Voucher Now</a>
+        <a href="#" class="orderNow button-light">Get Voucher Now</a>
         <svg class="svg coffee-voucher" width="65" height="82">
             <use href="./img/icon/icon-sprite.svg#coffee"></use>
         </svg>
@@ -173,14 +187,20 @@
     <section class="customer-reviews">
         <h2 class="title-small text-center">Customer Reviews</h2>
         <div class="customer-reviews-block">
-            <div class="team">
+            <div class="team" 
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <img class="team-img" src="./img/man.png" alt="John Peter">
                 <p class="team-name">John Peter</p>
                 <p class="text-team">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Quis</p>
             </div>
-            <div class="team">
+            <div class="team"
+                data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <img class="team-img" src="./img/woman.png" alt="Ella Thomson">
                 <p class="team-name text-center">Ella Thomson</p>
                 <p class="text-team text-center">Lorem ipsum dolor sit amet, consectetur
@@ -228,7 +248,10 @@
         <h2 class="title-branches text-center">Our Branches</h2>
         <ul class="branches-block text-center">
             <li class="branches-list">
-                <figure class="figure-branches">
+                <figure class="figure-branches"
+                    data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <img src="./img/newyork.png" alt="New York" class="img-branches">
                     <figcaption class="figcap-branches">
                         <p class="comment">New York</p>
@@ -241,7 +264,10 @@
                 </figure>
             </li>
             <li class="branches-list">
-                <figure class="figure-branches">
+                <figure class="figure-branches"
+                    data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <img src="./img/jakarta.png" alt="Jakarta" class="img-branches">
                     <figcaption class="figcap-branches">
                         <p class="comment">Jakarta</p>
@@ -254,7 +280,10 @@
                 </figure>
             </li>
             <li class="branches-list">
-                <figure class="figure-branches">
+                <figure class="figure-branches"
+                    data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <img src="./img/paris.png" alt="Paris" class="img-branches">
                     <figcaption class="figcap-branches">
                         <p class="comment">Paris</p>
@@ -368,7 +397,7 @@
     <form id="openModal" class="modal">
         <div class="order-modal">
             <div class="modal-content">
-                <a href="#close" title="Close" class="btn-close">X</a>
+                <a href="#" id="btn-close" title="Close" class="btn-close">X</a>
                 <h2 class="title-form">We will call you back</h2>
                     <div class="block-input">
                         <input type="text" 
@@ -378,13 +407,17 @@
                             placeholder="Name"
                             maxlength="30" 
                             required />
-                        <input type="tel" 
-                            name="user-tel" 
+                        <input type="text" 
+                            name="user-tel"    
                             id="user-tel-form" 
-                            class="modal-input" 
-                            placeholder="Phone"
-                            maxlength="13" 
-                            required />
+                            class="modal-input"
+                            value="+38" 
+                            maxlength="18" 
+                            pattern="\+38\(\d{3}\)-\d{3}-\d{2}-\d{2}"
+                            placeholder="+38(063)-513-57-25" 
+                            onfocus="addPrefix();" 
+                            onkeydown="preventDeletion(event);"
+                            oninput="formatPhoneNumber();">
                         <input type="email" 
                             name="user-email" 
                             id="user-email-form" 
@@ -406,6 +439,8 @@
             </div>
         </div>
     </form>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

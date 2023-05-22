@@ -39,6 +39,8 @@ img {
 
 button,
 svg {
+    z-index: 110;
+    transition: transform 0.5s ease-out;
     margin: 0;
     padding: 0;
 }
