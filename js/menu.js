@@ -9,7 +9,7 @@ function removeActiveClasses() {
 
 // Обработчик события прокрутки
 window.onscroll = () => {
-  const scrollPos = window.scrollY + 200;
+  const scrollPos = window.scrollY + 250;
   const nearBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight;
   
   let index = sectionIds.length;
@@ -34,7 +34,7 @@ sectionIds.forEach((id) => {
     e.preventDefault();
     
     window.scrollTo({
-        top: document.getElementById(id).offsetTop - 90,
+        top: document.getElementById(id).offsetTop - 100,
       behavior: "smooth"
     });
   });

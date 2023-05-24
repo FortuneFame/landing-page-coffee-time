@@ -122,7 +122,7 @@ figure {
 
     header,
     section,
-    footer,.nav-header {
+    footer,.nav-header, .about-section {
         max-width: 375px;
         margin: auto;
     }
@@ -132,7 +132,7 @@ figure {
 
     header,
     section,
-    footer,.nav-header {
+    footer,.nav-header, .about-section {
         max-width: 768px;
         margin: auto;
     }
@@ -142,7 +142,7 @@ figure {
 
     header,
     section,
-    footer,.nav-header {
+    footer,.nav-header, .about-section {
         max-width: 1440px;
         margin: auto;
     }
@@ -160,7 +160,7 @@ header,
 }
 
 .black-coffes,
-.open {
+.open, .about-section {
     background-color: #29a19c;
     overflow: hidden;
 }
