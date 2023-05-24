@@ -39,7 +39,7 @@ img {
 
 button,
 svg {
-    z-index: 110;
+    z-index: 2;
     transition: transform 0.5s ease-out;
     margin: 0;
     padding: 0;
@@ -69,7 +69,7 @@ figure {
 .white-coffee,
 .voucher,
 .customer-reviews,
-.open {
+.open{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 160px;
@@ -79,7 +79,7 @@ figure {
 .black-coffes,
 .hot-coffee,
 .white-coffee,
-.customer-reviews-block {
+.customer-reviews-block{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -111,17 +111,18 @@ figure {
 
     header,
     section,
-    footer {
+    footer,.nav-header {
         max-width: 320px;
         margin: auto;
     }
+    
 }
 
 @media (min-width: 375px) {
 
     header,
     section,
-    footer {
+    footer,.nav-header {
         max-width: 375px;
         margin: auto;
     }
@@ -131,7 +132,7 @@ figure {
 
     header,
     section,
-    footer {
+    footer,.nav-header {
         max-width: 768px;
         margin: auto;
     }
@@ -141,7 +142,7 @@ figure {
 
     header,
     section,
-    footer {
+    footer,.nav-header {
         max-width: 1440px;
         margin: auto;
     }
@@ -153,7 +154,7 @@ header,
 .white-coffee,
 .voucher,
 .customer-reviews,
-.branches-section {
+.branches-section, .blog-section {
     background-color: #212731;
     overflow: hidden;
 }
@@ -172,7 +173,6 @@ footer {
 header,
 section {
     position: relative;
-    z-index: 100;
 }
 
 .svg {
@@ -185,7 +185,7 @@ section {
 .backg1 {
     position: absolute;
     bottom: -2px;
-    z-index: 2;
+    z-index: 4;
     width: 113%;
 }
 
@@ -221,6 +221,15 @@ section {
     width: 100%;
 }
 
+.backg5 {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 190%;
+}
+
 .logo-img {
     fill: #fff;
     -webkit-transform: rotate(0.92turn);
@@ -229,7 +238,7 @@ section {
 }
 
 .img-voucher {
-    width: 900px;
+    width: 800px;
     padding-right: 25px;
 }
 
@@ -302,5 +311,9 @@ section {
 
     .button-dark:hover {
         border: 2px solid #212731;
+    }
+
+    .backg5{
+        margin-top: 40px;
     }
 }

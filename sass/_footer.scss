@@ -65,15 +65,23 @@
     margin-right: 10px;
 }
 
+.nav-link-footer {
+    position: relative;
+}
+
 .active-footer::before {
     position: absolute;
     content: "";
-    height: 3px;
+    height: 4px;
     width: 90%;
-    bottom: 0;
+    bottom: -3px;
     left: 3px;
-    background-color: #fff;
+    background-color: #212731;
+    border-radius: 2px;
+    z-index: 999;
 }
+
+
 
 @media (max-width:767px) {
 

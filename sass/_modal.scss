@@ -83,8 +83,8 @@
     .btn-close {
         margin-top: 10px;
         margin-right: 10px;
-        width: 20px;
-        height: 20px;
+        width: 19px;
+        height: 19px;
     }
 
     .modal-input {
@@ -97,6 +97,13 @@
 
     .modal-input:focus {
         border: 2px solid #29a19c;
+    }
+
+    .btn-close:hover {
+        border: 2px solid #29a19c;
+        background: transparent;
+        width: 23px;
+        height: 23px;
     }
 }
 
@@ -111,6 +118,7 @@
         margin-right: 10px;
         width: 20px;
         height: 20px;
+        border: 1px solid #29a19c;
     }
 
     .btn-close:hover {

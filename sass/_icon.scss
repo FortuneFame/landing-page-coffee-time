@@ -223,6 +223,33 @@
     width: 39px;
 }
 
+// -------------- Blog ---------------
+
+.coffee-blog-left {
+    left: 7%;
+    top: 0;
+    width: 44px;
+}
+
+.coffee-blog {
+    top: 77%;
+    left: 91%;
+    width: 49px;
+    transform: scaleX(-1);
+}
+
+.kettle-blog {
+    left: 5%;
+    top: 72%;
+    width: 80px;
+}
+
+.cup-blog {
+    top: -7%;
+    left: 91%;
+    width: 81px;
+}
+
 @media (max-width:767px) {
     // --------------- Header ----------------
 
@@ -236,9 +263,7 @@
     }
 
     .kettle-header {
-        top: 14%;
-        width: 40px;
-        left: 84%;
+        display: none;
     }
 
 
@@ -383,6 +408,34 @@
         transform: rotate(0.85turn);
     }
 
+    // -------------- Blog ---------------
+
+    .coffee-blog-left {
+        left: 5%;
+        top: 0;
+        width: 25px;
+    }
+
+    .coffee-blog {
+        top: 60%;
+        left: 91%;
+        width: 29px;
+        transform: scaleX(-1);
+    }
+
+    .kettle-blog {
+        left: 4%;
+        top: 60%;
+        width: 35px;
+    }
+
+    .cup-blog {
+        top: -7%;
+        left: 87%;
+        width: 40px;
+    }
+
+
     // -------------- Team ---------------
 
     .coffee-team {
@@ -500,7 +553,7 @@
     // --------------- Header ----------------
 
     .coffee-header-bottom {
-        top: 19%;
+        top: 24%;
         left: 80%;
         width: 40px;
         -webkit-transform: rotate(0.8turn);
@@ -657,6 +710,7 @@
     }
 
     // -------------- Team ---------------
+    
 
     .coffee-team {
         left: 7%;
@@ -676,6 +730,34 @@
         top: 88%;
         left: 56%;
     }
+
+    // -------------- Blog ---------------
+
+    .coffee-blog-left {
+        left: 5%;
+        top: 0;
+        width: 45px;
+    }
+
+    .coffee-blog {
+        top: 77%;
+        left: 91%;
+        width: 49px;
+        transform: scaleX(-1);
+    }
+
+    .kettle-blog {
+        left: 5%;
+        top: 72%;
+        width: 60px;
+    }
+
+    .cup-blog {
+        top: -7%;
+        left: 89%;
+        width: 60px;
+    }
+
 
     // -------------- Open ---------------
 

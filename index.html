@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website icon" type="png" href="img/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
@@ -13,29 +14,41 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="nav-header">
             <nav id="openNav" class="nav" data-aos="zoom-out-down">
                 <input type="checkbox" id="checkbox-toggle">
                 <label for="checkbox-toggle" class="burger">
                     <span class="burger-line"></span>
                 </label>
-                <ul class="nav-list menu">
-                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <ul style="z-index: 2;" class="nav-list menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#voucher" class="nav-link">Voucher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#shop" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
                 </ul>
-                <a class="logo-link" href="#" data-aos="zoom-out-down">
+                <a style="z-index: 2;" class="logo-link" href="#" data-aos="zoom-out-down">
                     <svg class="logo-img" width="50" height="50"
                         data-aos="zoom-out-down">
                         <use href="./img/icon/icon-sprite.svg#coffee"></use>
                     </svg>
                     YOUR LOGO
                 </a>
-                
+                <img style="z-index: 1;" class="backg5" src="./img/bpage5.png" alt="">
             </nav>
         </div>
         <div class="content">
@@ -47,23 +60,23 @@
                 aliqua.</p>
             <a href="#" class="orderNow button-light">Order Now</a>
         </div>
-        <svg class="coffee-header svg" width="51" height="57">
+        <svg class="coffee-header svg" width="51" height="57" >
             <use href="./img/icon/icon-sprite.svg#coffee"></use>
         </svg>
-        <svg class="kettle-header svg" width="88" height="95">
+        <svg class="kettle-header svg" width="88" height="95" >
             <use href="./img/icon/icon-sprite.svg#kettle"></use>
         </svg>
-        <svg class="cup-header svg" width="59" height="77">
+        <svg class="cup-header svg" width="59" height="77" >
             <use href="./img/icon/icon-sprite.svg#cup"></use>
         </svg>
-        <svg class="coffee-header-bottom svg" width="80" height="82">
+        <svg class="coffee-header-bottom svg" width="80" height="82" >
             <use href="./img/icon/icon-sprite.svg#coffee"></use>
         </svg>
         <img class="backg1" src="./img/bpage1.png" alt="">
         <img class="coffee1" src="./img/coffee1.png" alt="coffee">
 
     </header>
-    <section class="black-coffes">
+    <section id="menu" class="black-coffes">
         <div class="black-block-left">
             <h2 class="title-section text-left">Black Coffees</h2>
             <a href="#" class="orderNow button-dark">Order Now</a>
@@ -163,7 +176,7 @@
             <use href="./img/icon/icon-sprite.svg#kettle"></use>
         </svg>
     </section>
-    <section class="voucher text-center">
+    <section id="voucher" class="voucher text-center">
         <figure class="text-center"
             data-aos="fade-up"
             data-aos-offset="300"
@@ -183,6 +196,37 @@
         <svg class="svg cup-voucher" width="87" height="111">
             <use href="./img/icon/icon-sprite.svg#cup"></use>
         </svg>
+    </section>
+    <section id="blog" class="blog-section">
+        <h2 class="title-small text-center" style="margin: 40px;">Blog</h2>
+        <div id="carousel" class="carousel"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+            <div id="gallery">
+                <div class="gallery">
+                    <button class="btn" id="prev"><span class="prev icon"></span></button>
+                    <img id="current-image">
+                    <div id="description" class="description hidden">
+                        <p class="text-blog"></p>
+                    </div>
+                    <button class="btn" id="next"><span class="next icon"></span></button>
+                </div>
+                <div id="image-counter"></div>
+            </div>
+            <svg class="svg coffee-blog-left" width="53" height="59">
+                <use href="./img/icon/icon-sprite.svg#coffee"></use>
+            </svg>
+            <svg class="svg coffee-blog" width="109" height="126">
+                <use href="./img/icon/icon-sprite.svg#coffee"></use>
+            </svg>
+            <svg class="svg kettle-blog" width="126" height="143">
+                <use href="./img/icon/icon-sprite.svg#kettle"></use>
+            </svg>
+            <svg class="svg cup-blog" width="144" height="182">
+                <use href="./img/icon/icon-sprite.svg#cup"></use>
+            </svg>
+        </div>
     </section>
     <section class="customer-reviews">
         <h2 class="title-small text-center">Customer Reviews</h2>
@@ -219,14 +263,20 @@
         </svg>
         <img class="backg3" src="./img/bpage3.png" alt="">
     </section>
-    <section class="open">
+    <section id="shop" class="open">
         <h2 class="title-open text-center">We are Open</h2>
         <ul class="schedule-list text-center">
-            <li class="schedule">
+            <li class="schedule" 
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <p class="week">Monday - Friday</p>
                 <p class="time">10:00 am- 10:00 pm</p>
             </li>
-            <li class="schedule">
+            <li class="schedule" 
+                data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <p class="week">Saturday and Sunday</p>
                 <p class="time">10:00 am- 10:10 pm</p>
             </li>
@@ -253,7 +303,10 @@
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                     <img src="./img/newyork.png" alt="New York" class="img-branches">
-                    <figcaption class="figcap-branches">
+                    <figcaption class="figcap-branches" 
+                        data-aos="fade-down"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <p class="comment">New York</p>
                         <p class="text-branches">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor
@@ -269,7 +322,10 @@
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                     <img src="./img/jakarta.png" alt="Jakarta" class="img-branches">
-                    <figcaption class="figcap-branches">
+                    <figcaption class="figcap-branches"
+                        data-aos="fade-down"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <p class="comment">Jakarta</p>
                         <p class="text-branches">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor
@@ -285,7 +341,10 @@
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                     <img src="./img/paris.png" alt="Paris" class="img-branches">
-                    <figcaption class="figcap-branches">
+                    <figcaption class="figcap-branches"
+                        data-aos="fade-down"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <p class="comment">Paris</p>
                         <p class="text-branches">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor
@@ -311,16 +370,28 @@
         <img class="backg2" src="./img/bpage2.png" alt="">
         <img class="backg4" src="./img/bpage4.png" alt="">
     </section>
-    <footer class="footer">
+    <!-- <section id="about" class="about-section">
+        <h2 class="title-section text-center">About</h2>
+        <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.</p>
+    </section> -->
+    <footer id="contact" class="footer">
         <div class="info-block">
-            <a class="logo-link footer-logo" href="#">
+            <a class="logo-link footer-logo" href="#" 
+                data-aos="fade-down"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <svg class="logo-img" width="50" height="50">
                     <use href="./img/icon/icon-sprite.svg#coffee"></use>
                 </svg>
                 YOUR LOGO
             </a>
             <div class="info-block-right">
-                <div class="section-info">
+                <div class="section-info" 
+                    data-aos="fade-down"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <p class="info">Information.</p>
                     <ul class="info-list">
                         <li class="info-nav">
@@ -340,7 +411,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="section-contact">
+                <div class="section-contact" 
+                    data-aos="fade-down"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <p class="contact">Contact Us.</p>
                     <ul class="contact-list">
                         <li class="supp">
@@ -355,12 +429,24 @@
         </div>
         <nav class="nav-footer">
             <ul class="nav-list footer-list">
-                <li class="nav footer-nav"><a href="#" class="nav-link active-footer">Home</a></li>
-                <li class="nav footer-nav"><a href="#" class="nav-link">About</a></li>
-                <li class="nav footer-nav"><a href="#" class="nav-link">Menu</a></li>
-                <li class="nav footer-nav"><a href="#" class="nav-link">Blog</a></li>
-                <li class="nav footer-nav"><a href="#" class="nav-link">Shop</a></li>
-                <li class="nav footer-nav"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav footer-nav">
+                    <a href="#home" class="nav-link-footer">Home</a>
+                </li>
+                <li class="nav footer-nav">
+                    <a href="#menu" class="nav-link-footer">Menu</a>
+                </li>
+                <li class="nav footer-nav">
+                    <a href="#voucher" class="nav-link-footer">Voucher</a>
+                </li>
+                <li class="nav footer-nav">
+                    <a href="#blog" class="nav-link-footer">Blog</a>
+                </li>
+                <li class="nav footer-nav">
+                    <a href="#shop" class="nav-link-footer">Shop</a>
+                </li>
+                <li class="nav footer-nav">
+                    <a href="#" class="nav-link-footer">About</a>
+                </li>
             </ul>
             <ul class="soc-footer-list">
                 <li class="soc-footer">
@@ -440,7 +526,10 @@
         </div>
     </form>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="main.js"></script>
+    <script src="js/svg.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 
 </html>
