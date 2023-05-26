@@ -248,6 +248,27 @@
   width: 81px;
 }
 
+.coffee-about {
+  top: 46%;
+  left: 48%;
+  z-index: 40;
+  transform: rotate(0.85turn);
+}
+
+.kettle-about {
+  top: 47%;
+  left: 93%;
+  z-index: 40;
+  transform: rotate(0.15turn);
+}
+
+.cup-about {
+  top: 42%;
+  left: 2%;
+  z-index: 40;
+  transform: rotate(0.95turn);
+}
+
 @media (max-width: 767px) {
   .coffee-header-bottom {
     top: 77%;
@@ -377,23 +398,23 @@
   }
   .coffee-blog-left {
     left: 5%;
-    top: 0;
+    top: -19%;
     width: 25px;
   }
   .coffee-blog {
-    top: 60%;
-    left: 91%;
+    top: 85%;
+    left: 88%;
     width: 29px;
     transform: scaleX(-1);
   }
   .kettle-blog {
-    left: 4%;
-    top: 60%;
+    left: 10%;
+    top: 84%;
     width: 35px;
   }
   .cup-blog {
-    top: -7%;
-    left: 87%;
+    top: -38%;
+    left: 83%;
     width: 40px;
   }
   .coffee-team {
@@ -486,6 +507,27 @@
     top: -2%;
     left: 44%;
     width: 25px;
+  }
+  .coffee-about {
+    top: 84%;
+    left: 45%;
+    z-index: 40;
+    width: 30px;
+    transform: rotate(0.85turn);
+  }
+  .kettle-about {
+    top: 47%;
+    left: 83%;
+    z-index: 40;
+    width: 50px;
+    transform: rotate(0.15turn);
+  }
+  .cup-about {
+    top: 22%;
+    left: 5%;
+    z-index: 40;
+    width: 40px;
+    transform: rotate(0.95turn);
   }
 }
 @media (min-width: 768px) and (max-width: 1439px) {
@@ -635,25 +677,27 @@
     left: 56%;
   }
   .coffee-blog-left {
-    left: 5%;
-    top: 0;
+    left: 7%;
+    top: -15%;
     width: 45px;
+    transform: scaleX(-1);
   }
   .coffee-blog {
-    top: 77%;
-    left: 91%;
-    width: 49px;
-    transform: scaleX(-1);
+    top: 90%;
+    left: 88%;
+    width: 45px;
+    transform: rotate(0.85turn);
   }
   .kettle-blog {
     left: 5%;
-    top: 72%;
+    top: 90%;
     width: 60px;
+    transform: rotate(0.15turn);
   }
   .cup-blog {
-    top: -7%;
-    left: 89%;
-    width: 60px;
+    top: -30%;
+    left: 88%;
+    width: 50px;
   }
   .coffee-open-left {
     top: 0;
@@ -707,6 +751,27 @@
     -webkit-transform: rotate(0.92turn);
     -ms-transform: rotate(0.92turn);
     transform: rotate(0.92turn);
+  }
+  .coffee-about {
+    top: 76%;
+    left: 48%;
+    z-index: 40;
+    width: 43px;
+    transform: rotate(0.85turn);
+  }
+  .kettle-about {
+    top: 31%;
+    left: 83%;
+    width: 60px;
+    z-index: 40;
+    transform: rotate(0.15turn);
+  }
+  .cup-about {
+    top: 29%;
+    left: 11%;
+    z-index: 40;
+    width: 55px;
+    transform: rotate(0.95turn);
   }
 }
 /* -------- Global -------- */
@@ -855,13 +920,13 @@ header,
 .white-coffee,
 .voucher,
 .customer-reviews,
-.branches-section, .blog-section {
+.branches-section, .blog-section, .about-section {
   background-color: #212731;
   overflow: hidden;
 }
 
 .black-coffes,
-.open, .about-section {
+.open {
   background-color: #29a19c;
   overflow: hidden;
 }
@@ -1091,7 +1156,7 @@ nav {
 }
 
 .nav:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 100px;
 }
 
 .content {
@@ -1425,7 +1490,7 @@ nav {
   align-items: center;
   justify-content: center;
   height: 450px;
-  width: 60%;
+  width: 70%;
   margin: auto;
   border: 1px solid #29a19c;
 }
@@ -1624,7 +1689,8 @@ nav {
     text-align: center;
   }
   .gallery {
-    height: 350px;
+    width: 100%;
+    height: 300px;
   }
 }
 @media (min-width: 768px) and (max-width: 1439px) {
@@ -1726,6 +1792,9 @@ nav {
   .team-name {
     margin: bottom 0;
   }
+  .gallery {
+    width: 100%;
+  }
 }
 @media (min-width: 1440px) {
   .customer-reviews-block {
@@ -1742,7 +1811,7 @@ nav {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-around;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
@@ -1817,6 +1886,18 @@ nav {
   z-index: 999;
 }
 
+.contact-box {
+  display: none;
+}
+
+.address {
+  font-size: 12px;
+}
+
+.section-contact {
+  width: 225px;
+}
+
 @media (max-width: 767px) {
   .footer-logo {
     -webkit-box-pack: center;
@@ -1842,9 +1923,6 @@ nav {
   .section-info {
     margin-bottom: 20px;
     margin-right: 0;
-  }
-  .section-contact {
-    display: none;
   }
   .footer-logo {
     margin-bottom: 40px;
@@ -2106,7 +2184,7 @@ nav {
   font-size: 33px;
   font-weight: 700;
   letter-spacing: 2px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .info-nav,
@@ -2471,16 +2549,92 @@ nav {
   }
 }
 .about-section {
+  position: relative;
+  text-align: center;
+  height: 500px;
+  width: 100%;
+}
+
+.accordion {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 100px;
 }
 
 .title-about {
-  display: flex;
-  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .accordion-header {
-  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  width: 300px;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.accordion-content {
+  width: 300px;
+}
+
+.text-about {
+  padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+  .about-section {
+    height: 500px;
+  }
+  .accordion {
+    display: inline-block;
+    margin: auto;
+    padding: 0 20px;
+  }
+  .accordion-item {
+    margin: auto;
+    text-align: center;
+  }
+  .title-about {
+    margin-bottom: 50px;
+  }
+  .accordion-header {
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .accordion-content {
+    width: 250px;
+  }
+  .text-about {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .about-section {
+    height: 500px;
+  }
+  .accordion {
+    display: inline-block;
+    margin: auto;
+    padding: 0 50px;
+  }
+  .accordion-item {
+    margin: auto;
+    text-align: center;
+  }
+  .title-about {
+    margin-bottom: 20px;
+  }
+  .accordion-header {
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .accordion-content {
+    width: 400px;
+  }
+  .text-about {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

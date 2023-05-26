@@ -295,49 +295,6 @@
             <use href="./img/icon/icon-sprite.svg#cup"></use>
         </svg>
     </section>
-        <section id="about" class="about-section">
-            <div style="padding: 60px 120px;">
-                <h2 class="title-branches title-about">About Us</h2>
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">Price</h2>
-                        <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">Quality</h2>
-                        <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">Communication</h2>
-                        <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">Emotions</h2>
-                        <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     <section id="branches" class="branches-section">
         <h2 class="title-branches text-center">Our Branches</h2>
         <ul class="branches-block text-center">
@@ -412,6 +369,57 @@
             <use href="./img/icon/icon-sprite.svg#cup"></use>
         </svg>
         <img class="backg2" src="./img/bpage2.png" alt="">
+    </section>
+    <section id="about" class="about-section">
+        <h2 class="title-branches title-about">About Us</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">Price</h2>
+                <div class="accordion-content">
+                    <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">Quality</h2>
+                <div class="accordion-content">
+                    <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">Emotions</h2>
+                <div class="accordion-content">
+                    <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">Communication</h2>
+                <div class="accordion-content">
+
+                    <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <svg class="svg coffee-about" width="53" height="59">
+            <use href="./img/icon/icon-sprite.svg#coffee"></use>
+        </svg>
+        <svg class="svg kettle-about" width="84" height="97">
+            <use href="./img/icon/icon-sprite.svg#kettle"></use>
+        </svg>
+        <svg class="svg cup-about" width="79" height="99">
+            <use href="./img/icon/icon-sprite.svg#cup"></use>
+        </svg>
         <img class="backg4" src="./img/bpage4.png" alt="">
     </section>
     <footer id="contact" class="footer">
@@ -426,10 +434,7 @@
                 YOUR LOGO
             </a>
             <div class="info-block-right">
-                <div class="section-info" 
-                    data-aos="fade-down"
-                    data-aos-offset="100"
-                    data-aos-easing="ease-in-sine">
+                <!-- <div class="section-info" data-aos="fade-down" data-aos-offset="100" data-aos-easing="ease-in-sine">
                     <p class="info">Information.</p>
                     <ul class="info-list">
                         <li class="info-nav">
@@ -445,18 +450,26 @@
                             <a href="#" id="map" class="link-info">Contact</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="section-contact" 
                     data-aos="fade-down"
                     data-aos-offset="100"
                     data-aos-easing="ease-in-sine">
                     <p class="contact">Contact Us.</p>
                     <ul class="contact-list">
+                        <li class="info-nav">
+                            <a href="#" id="map" class="link-info">Contact</a>
+                        </li>
                         <li class="supp">
                             <a href="#" class="supp-link">Support</a>
-                        </li>
-                        <li class="address">
-                            <a href="mailto:your_id@gmail.com" class="address-link">your_id@gmail.com</a>
+                            <div class="contact-box">
+                                <div class="mail-footer">
+                                    <a href="mailto:your_id@gmail.com" class="address">Mail: your_id@gmail.com</a>
+                                </div>
+                                <div class="tel-footer">
+                                    <a href="tel:+380961111111" class="address">Phone: +38 096 111 11 11</a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -478,9 +491,6 @@
                 </li>
                 <li class="nav footer-nav">
                     <a href="#shop" class="nav-link-footer">Shop</a>
-                </li>
-                <li class="nav footer-nav">
-                    <a href="#" class="nav-link-footer">About</a>
                 </li>
             </ul>
             <ul class="soc-footer-list">
@@ -561,7 +571,6 @@
         </div>
     </form>
     <div id="myModalMap" class="modal-map">
-       
         <div class="modal-content-map">
             <button style="cursor: pointer;" class="btn-close">X</button>
             <div class="box-title">

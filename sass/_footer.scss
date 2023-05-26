@@ -1,15 +1,13 @@
-
-
 .info-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    -ms-flex-align: start;
+    align-items: start;
     padding: 50px;
 }
 
@@ -32,11 +30,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .soc {
@@ -44,11 +42,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -81,49 +79,67 @@
     z-index: 999;
 }
 
+.contact-box {
+    // position: absolute;
+    display: none;
+}
+
+.address{
+    font-size: 12px;
+    // width: 100px;
+}
+
+.section-contact{
+    width: 225px;
+    // position: relative;
+}
+
+.supp{}
 
 
 @media (max-width:767px) {
 
-    .footer-logo{
+    .footer-logo {
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 
-    .info-block{
+    .info-block {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-                padding-bottom: 20px;
-                    padding-top: 20px;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
-    .info-block-right{
+
+    .info-block-right {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
-    .section-info{
+
+    .section-info {
         margin-bottom: 20px;
         margin-right: 0;
     }
-    .section-contact{
-       display: none;
-    }
-    .footer-logo{
+
+    .footer-logo {
         margin-bottom: 40px;
     }
-    .nav-footer{
+
+    .nav-footer {
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         padding: 20px;
     }
-    .soc-footer:not(:last-child){
+
+    .soc-footer:not(:last-child) {
         margin-right: 30px;
     }
 }
@@ -153,7 +169,7 @@
         margin-right: 2px;
     }
 
-    .nav-footer{
+    .nav-footer {
         padding-left: 30px;
         padding-right: 30px;
     }

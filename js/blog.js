@@ -24,6 +24,7 @@ const descriptionP = document.getElementById('description').getElementsByTagName
 let index = 0;
 
 function updateImage() {
+    // Обновляет отображение текущего изображения и описания
     currentImage.src = images[index];
     descriptionP.innerHTML = descriptions[index];
     counter.innerHTML = `<h2 class='num-img'>${index + 1}/${images.length}</h2>`;
@@ -31,6 +32,7 @@ function updateImage() {
 };
 
 function updateButtons() {
+    // Обновляет доступность кнопок "prev" и "next" в зависимости от текущего индекса изображения
     if (index === 0) {
         prevButton.classList.add('disabled');
         nextButton.classList.remove('disabled');
@@ -44,6 +46,7 @@ function updateButtons() {
 };
 
 function nextImage() {
+    // Переключает на следующее изображение, если доступно
     if (index < images.length - 1) {
         index++;
         updateImage();
@@ -52,6 +55,7 @@ function nextImage() {
 };
 
 function prevImage() {
+    // Переключает на предыдущее изображение, если доступно
     if (index > 0) {
         index--;
         updateImage();
@@ -60,6 +64,7 @@ function prevImage() {
 };
 
 currentImage.addEventListener('click', () => {
+    // При щелчке по текущему изображению, переключает видимость описания
     descriptionP.parentNode.classList.toggle('visible');
 });
 

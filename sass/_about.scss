@@ -1,16 +1,107 @@
-.about-section{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.accordion{
+.about-section {
+    position: relative;
+    text-align: center;
+    height: 500px;
+    width: 100%;
 
 }
-.title-about{
+
+.accordion {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 100px;
+
 }
 
-.accordion-header{
-    font-size: 50px;
+.title-about {
+    margin-bottom: 50px;
+}
+
+.accordion-header {
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    width: 300px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.accordion-content {
+    width: 300px;
+
+}
+
+.text-about {
+    padding: 0 20px;
+}
+
+@media (max-width:767px) {
+    .about-section {
+        height: 500px;
+    }
+
+    .accordion {
+        display: inline-block;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    .accordion-item {
+        margin: auto;
+        text-align: center;
+    }
+
+    .title-about {
+        margin-bottom: 50px;
+    }
+
+    .accordion-header {
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .accordion-content {
+        width: 250px;
+    }
+
+    .text-about {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1439px) {
+
+    .about-section {
+        height: 500px;
+    }
+
+    .accordion {
+        display: inline-block;
+        margin: auto;
+        padding: 0 50px;
+    }
+
+    .accordion-item {
+        margin: auto;
+        text-align: center;
+    }
+
+    .title-about {
+        margin-bottom: 20px;
+    }
+
+    .accordion-header {
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .accordion-content {
+        width: 400px;
+    }
+
+    .text-about {
+        margin-bottom: 20px;
+    }
 }
