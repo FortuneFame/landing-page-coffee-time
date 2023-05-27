@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     padding: 0 100px;
-
 }
 
 .title-about {
@@ -36,7 +35,7 @@
 
 @media (max-width:767px) {
     .about-section {
-        height: 500px;
+        height: 400px;
     }
 
     .accordion {
@@ -51,12 +50,13 @@
     }
 
     .title-about {
-        margin-bottom: 50px;
+        font-size: 60px;
+        margin-bottom: 30px;
     }
 
     .accordion-header {
         width: 100%;
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 20px;
     }
 
@@ -65,7 +65,7 @@
     }
 
     .text-about {
-        font-size: 13px;
+        font-size: 10px;
         margin-bottom: 20px;
     }
 }

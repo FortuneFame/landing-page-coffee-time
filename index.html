@@ -112,7 +112,7 @@
             <use href="./img/icon/icon-sprite.svg#kettle"></use>
         </svg>
     </section>
-    <section class="hot-coffee">
+    <section id="hot" class="hot-coffee">
         <div class="hot-bllock-left">
             <figure class="figure-hot-coffee" 
                 data-aos="fade-right"
@@ -145,7 +145,7 @@
         </svg>
         <img class="backg2" src="./img/bpage2.png" alt="">
     </section>
-    <section class="white-coffee">
+    <section id="white" class="white-coffee">
         <div class="white-bllock-left">
             <h2 class="title-section">White Coffees</h2>
             <a href="#" class="orderNow button-light">Order Now</a>
@@ -229,12 +229,12 @@
             </svg>
         </div>
     </section>
-    <section class="customer-reviews">
+    <section id="team" class="customer-reviews">
         <h2 class="title-small text-center">Customer Reviews</h2>
         <div class="customer-reviews-block">
             <div class="team" 
                 data-aos="fade-right"
-                data-aos-offset="100"
+                data-aos-offset="50"
                 data-aos-easing="ease-in-sine">
                 <img class="team-img" src="./img/man.png" alt="John Peter">
                 <p class="team-name">John Peter</p>
@@ -244,7 +244,7 @@
             </div>
             <div class="team"
                 data-aos="fade-left"
-                data-aos-offset="100"
+                data-aos-offset="50"
                 data-aos-easing="ease-in-sine">
                 <img class="team-img" src="./img/woman.png" alt="Ella Thomson">
                 <p class="team-name text-center">Ella Thomson</p>
@@ -269,7 +269,7 @@
         <ul class="schedule-list text-center">
             <li class="schedule" 
                 data-aos="fade-right"
-                data-aos-offset="100"
+                data-aos-offset="50"
                 data-aos-easing="ease-in-sine">
                 <p class="week">Monday - Friday</p>
                 <p class="time">10:00 am- 10:00 pm</p>
@@ -298,15 +298,15 @@
     <section id="branches" class="branches-section">
         <h2 class="title-branches text-center">Our Branches</h2>
         <ul class="branches-block text-center">
-            <li class="branches-list">
+            <li id="newYork" class="branches-list">
                 <figure class="figure-branches"
                     data-aos="fade-left"
-                    data-aos-offset="100"
+                    data-aos-offset="50"
                     data-aos-easing="ease-in-sine">
                     <img src="./img/newyork.png" alt="New York" class="img-branches">
                     <figcaption class="figcap-branches" 
                         data-aos="fade-down"
-                        data-aos-offset="100"
+                        data-aos-offset="50"
                         data-aos-easing="ease-in-sine">
                         <p class="comment">New York</p>
                         <p class="text-branches">Lorem ipsum dolor sit amet, consectetur
@@ -317,15 +317,15 @@
                     </figcaption>
                 </figure>
             </li>
-            <li class="branches-list">
+            <li id="jakarta" class="branches-list">
                 <figure class="figure-branches"
                     data-aos="fade-left"
-                    data-aos-offset="100"
+                    data-aos-offset="50"
                     data-aos-easing="ease-in-sine">
                     <img src="./img/jakarta.png" alt="Jakarta" class="img-branches">
                     <figcaption class="figcap-branches"
                         data-aos="fade-down"
-                        data-aos-offset="100"
+                        data-aos-offset="50"
                         data-aos-easing="ease-in-sine">
                         <p class="comment">Jakarta</p>
                         <p class="text-branches">Lorem ipsum dolor sit amet, consectetur
@@ -336,15 +336,15 @@
                     </figcaption>
                 </figure>
             </li>
-            <li class="branches-list">
+            <li id="paris" class="branches-list">
                 <figure class="figure-branches"
                     data-aos="fade-left"
-                    data-aos-offset="100"
+                    data-aos-offset="50"
                     data-aos-easing="ease-in-sine">
                     <img src="./img/paris.png" alt="Paris" class="img-branches">
                     <figcaption class="figcap-branches"
                         data-aos="fade-down"
-                        data-aos-offset="100"
+                        data-aos-offset="50"
                         data-aos-easing="ease-in-sine">
                         <p class="comment">Paris</p>
                         <p class="text-branches">Lorem ipsum dolor sit amet, consectetur
@@ -373,7 +373,7 @@
     <section id="about" class="about-section">
         <h2 class="title-branches title-about">About Us</h2>
         <div class="accordion">
-            <div class="accordion-item">
+            <div id="price" class="accordion-item">
                 <h2 class="accordion-header">Price</h2>
                 <div class="accordion-content">
                     <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -382,7 +382,7 @@
                     </p>
                 </div>
             </div>
-            <div class="accordion-item">
+            <div id="quality" class="accordion-item">
                 <h2 class="accordion-header">Quality</h2>
                 <div class="accordion-content">
                     <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -391,7 +391,7 @@
                     </p>
                 </div>
             </div>
-            <div class="accordion-item">
+            <div id="emotions" class="accordion-item">
                 <h2 class="accordion-header">Emotions</h2>
                 <div class="accordion-content">
                     <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -400,10 +400,9 @@
                     </p>
                 </div>
             </div>
-            <div class="accordion-item">
+            <div id="communication" class="accordion-item">
                 <h2 class="accordion-header">Communication</h2>
                 <div class="accordion-content">
-
                     <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua.
@@ -424,33 +423,48 @@
     </section>
     <footer id="contact" class="footer">
         <div class="info-block">
-            <a class="logo-link footer-logo" href="#" 
-                data-aos="fade-down"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine">
-                <svg class="logo-img" width="50" height="50">
-                    <use href="./img/icon/icon-sprite.svg#coffee"></use>
-                </svg>
-                YOUR LOGO
-            </a>
+            <div class="logo-section">
+                <a class="logo-link footer-logo" href="#" data-aos="fade-down" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <svg class="logo-img" width="50" height="50">
+                        <use href="./img/icon/icon-sprite.svg#coffee"></use>
+                    </svg>
+                    YOUR LOGO
+                </a>
+            </div>
             <div class="info-block-right">
-                <!-- <div class="section-info" data-aos="fade-down" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                <div class="section-info" data-aos="fade-down" data-aos-offset="100" data-aos-easing="ease-in-sine">
                     <p class="info">Information.</p>
                     <ul class="info-list">
-                        <li class="info-nav">
-                            <a href="#about" class="link-info">About us</a>
+                        <li class="info-nav-info">
+                            <a href="#" class="link-info">About us</a>
+                            <ul class="sub-info-list">
+                                <li><a class="address sub" href="#price">Price</a></li>
+                                <li><a class="address sub" href="#quality">Quality</a></li>
+                                <li><a class="address sub" href="#emotions">Emotions</a></li>
+                                <li><a class="address sub" href="#communication">Communication</a></li>
+                            </ul>
                         </li>
-                        <li class="info-nav">
-                            <a href="#branches" class="link-info">Branches</a>
+                        <li class="info-nav-info">
+                            <a href="#" class="link-info">Branches</a>
+                            <ul class="sub-info-list">
+                                <li><a class="address sub" href="#newYork">New York</a></li>
+                                <li><a class="address sub" href="#jakarta">Jakarta</a></li>
+                                <li><a class="address sub" href="#paris">Paris</a></li>
+                            </ul>
                         </li>
-                        <li class="info-nav">
-                            <a href="#menu" class="link-info">Menu</a>
+                        <li class="info-nav-info">
+                            <a href="#" class="link-info">Menu</a>
+                            <ul class="sub-info-list">
+                                <li><a class="address sub" href="#menu">Black Coffees</a></li>
+                                <li><a class="address sub" href="#hot">Hot Coffees</a></li>
+                                <li><a class="address sub" href="#white">White Coffees</a></li>
+                            </ul>
                         </li>
-                        <li class="info-nav">
-                            <a href="#" id="map" class="link-info">Contact</a>
+                        <li class="info-nav-info">
+                            <a href="#team" class="link-info">Team</a>
                         </li>
                     </ul>
-                </div> -->
+                </div>
                 <div class="section-contact" 
                     data-aos="fade-down"
                     data-aos-offset="100"
@@ -474,6 +488,18 @@
                     </ul>
                 </div>
             </div>
+            <svg class="svg cup-footer-top" width="82" height="106">
+                <use href="./img/icon/icon-sprite.svg#cup"></use>
+            </svg>
+            <svg class="svg coffee-footer-left" width="51" height="57">
+                <use href="./img/icon/icon-sprite.svg#coffee"></use>
+            </svg>
+            <svg class="svg cup-footer" width="82" height="106">
+                <use href="./img/icon/icon-sprite.svg#cup"></use>
+            </svg>
+            <svg class="svg kettle-footer" width="121" height="131">
+                <use href="./img/icon/icon-sprite.svg#kettle"></use>
+            </svg>
         </div>
         <nav class="nav-footer">
             <ul class="nav-list footer-list">
@@ -523,6 +549,7 @@
                     </a>
                 </li>
             </ul>
+            
         </nav>
     </footer>
     <form id="openModal" class="modal">
@@ -605,7 +632,7 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="js/svg.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/menu.js"></script>
+    <script src="js/nav.js"></script>
     <script src="js/blog.js"></script>
     <script src="js/map.js"></script>
     <script src="js/about.js"></script>

@@ -1,12 +1,11 @@
 .black-coffes {
     position: relative;
-    padding-top: 50px;
 }
 
 
 .hot-coffee {
     position: relative;
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 
@@ -21,8 +20,6 @@
     padding-bottom: 50px;
 }
 
-
-
 .voucher {
     position: relative;
     padding-bottom: 50px;
@@ -36,7 +33,7 @@
 
 .customer-reviews {
     position: relative;
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom: 230px;
 }
 
@@ -103,7 +100,7 @@
 }
 
 .blog-section h2 {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .gallery {
@@ -211,6 +208,17 @@
     display: none;
 }
 
+.comment {
+    transition: transform 1.5s;
+    cursor: pointer;
+}
+
+.branches-list.active-bran {
+    transform: scale(1.07);
+    transition: transform 1.5s;
+    border-radius: 10px;
+}
+
 @media (max-width:767px) {
 
     .black-coffes {
@@ -241,8 +249,11 @@
     }
 
     .customer-reviews {
-        padding-top: 50px;
         padding-bottom: 80px;
+    }
+
+    .schedule {
+        margin-bottom: 40px;
     }
 
     .open {
@@ -332,13 +343,13 @@
 
     .blog-section {
         position: relative;
-        height: 600px;
+        height: 500px;
         text-align: center;
     }
 
     .gallery {
         width: 100%;
-        height: 300px;
+        height: 250px;
     }
 }
 
@@ -390,8 +401,7 @@
     }
 
     .customer-reviews {
-        padding-top: 50px;
-        padding-bottom: 250px;
+        padding-bottom: 200px;
     }
 
     .team:last-child {
@@ -451,7 +461,7 @@
     }
 
     .team-img {
-        width: 100%;
+        width: 70%;
     }
 
     .img-branches {
@@ -470,6 +480,10 @@
 
     .gallery {
         width: 100%;
+    }
+
+    .blog-section {
+        height: 660px;
     }
 }
 

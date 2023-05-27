@@ -95,13 +95,25 @@
     margin-bottom: 25px;
 }
 
-.info-nav,
 .supp-link,
-.address-link {
+.address-link,
+.link-info {
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 2px;
     line-height: 35px;
+    margin-left: 10px;
+}
+
+.link-info {
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+.link-info:hover,
+.supp-link:hover {
+    color: #212731;
+    font-weight: 600;
 }
 
 .text-content {
@@ -224,14 +236,7 @@
 
     .contact,
     .info {
-        font-size: 18px;
-    }
-
-    .link-info,
-    .supp-link,
-    .address-link {
-        font-size: 15px;
-        line-height: 23px;
+        font-size: 12px;
     }
 
     .title-form {
@@ -241,6 +246,25 @@
         padding-bottom: 30px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .address {
+        font-size: 8px;
+        line-height: 3px;
+    }
+
+    .supp-link,
+    .link-info {
+        font-size: 10px;
+        line-height: 3px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-left: 10px;
+    }
+
+    .link-info {
+        letter-spacing: 2px;
+        // line-height: 15px;
     }
 }
 
@@ -325,14 +349,13 @@
 
     .contact,
     .info {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .link-info,
     .supp-link,
     .address-link {
         font-size: 15px;
-        line-height: 23px;
     }
 
     .title-form {
