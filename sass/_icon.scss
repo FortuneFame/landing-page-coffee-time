@@ -324,7 +324,7 @@
 
 
     .cup-header {
-        top: 49%;
+        top: 35%;
         left: 80%;
         width: 40px;
     }
@@ -336,15 +336,16 @@
     // ----------------- Black -----------------
 
     .coffee-black-top {
-        left: 90%;
-        top: 48%;
+        left: 60%;
+        top: 80%;
         width: 25px;
+        transform: rotate(0.8turn);
     }
 
     .coffee-black-left {
-        left: 16%;
-        top: -11px;
-        width: 30px;
+        left: 46%;
+        top: 0;
+        width: 20px;
         -webkit-transform: rotate(0.8turn);
         -ms-transform: rotate(0.8turn);
         transform: rotate(0.8turn);
@@ -352,20 +353,20 @@
 
     .coffee-black-right {
         left: 7%;
-        top: 85%;
+        top: 45%;
         width: 24px;
     }
 
     .kettle-black {
         left: 39%;
-        top: 52%;
+        top: 42%;
         width: 40px;
     }
 
     .cup-black {
         left: 88%;
-        top: -20px;
-        width: 30px;
+        top: 50px;
+        width: 23px;
     }
 
     // -------------- Hot ---------------
@@ -384,7 +385,7 @@
     }
 
     .kettle-hot {
-        left: 44%;
+        left: 34%;
         top: 73%;
         width: 40px;
         -webkit-transform: rotate(1.15turn);
@@ -409,16 +410,16 @@
     }
 
     .coffee-white {
-        left: 38%;
+        left: 58%;
         width: 20px;
-        top: 30%;
+        top: 40%;
         -webkit-transform: rotate(0.8turn);
         -ms-transform: rotate(0.8turn);
         transform: rotate(0.8turn);
     }
 
     .cup-white {
-        left: 90%;
+        left: 80%;
         top: -8%;
         width: 30px;
         -webkit-transform: rotate(1.1turn) scaleX(-1);
@@ -469,7 +470,7 @@
     .coffee-blog-left {
         left: 5%;
         top: -19%;
-        width: 25px;
+        width: 29px;
     }
 
     .coffee-blog {
@@ -518,8 +519,8 @@
     // -------------- Open ---------------
 
     .coffee-open-left {
-        top: 0;
-        left: 4%;
+        top: 25px;
+        left: 10%;
         width: 30px;
         -webkit-transform: rotate(0.85turn);
         -ms-transform: rotate(0.85turn);
@@ -527,14 +528,14 @@
     }
 
     .coffee-open {
-        top: 72%;
-        left: 87%;
+        top: 79%;
+        left: 85%;
         width: 30px;
     }
 
     .kettle-open {
-        top: -8%;
-        left: 85%;
+        top: -4%;
+        left: 79%;
         width: 40px;
         -webkit-transform: rotate(1.15turn);
         -ms-transform: rotate(1.15turn);
@@ -542,9 +543,9 @@
     }
 
     .cup-open {
-        top: 68%;
+        top: 72%;
         left: 3%;
-        width: 40px;
+        width: 35px;
         -webkit-transform: rotate(0.92turn);
         -ms-transform: rotate(0.92turn);
         transform: rotate(0.92turn);
@@ -553,13 +554,13 @@
     // -------------- Branches ---------------
 
     .coffee-branches-left {
-        top: 25%;
-        left: 12%;
+        top: 29%;
+        left: 8%;
         width: 30px;
     }
 
     .coffee-branches-right {
-        top: 55%;
+        top: 56.5%;
         left: 83%;
         width: 30px;
         -webkit-transform: rotate(0.85turn);
@@ -578,7 +579,7 @@
 
     .cup-branches {
         left: 72%;
-        top: 93%;
+        top: 94%;
         width: 40px;
         -webkit-transform: rotate(0.92turn);
         -ms-transform: rotate(0.92turn);
@@ -609,7 +610,7 @@
         top: 82%;
         left: 45%;
         z-index: 40;
-        width: 25px;
+        width: 35px;
         transform: rotate(0.85turn);
     }
 
